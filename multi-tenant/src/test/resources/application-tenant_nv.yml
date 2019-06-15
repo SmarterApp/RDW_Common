@@ -6,6 +6,7 @@ tenantProperties:
       key: NVX #To verify id and key need not match
       name: Nevada
       description: Some Descriptive Text For NV
+      sandboxDataset: "test-dataset"
       sandbox: true
 
 spring:

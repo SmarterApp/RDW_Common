@@ -233,6 +233,12 @@ abstract class DSLScriptBase extends PipelineScript {
                 csvParser.each {
                     this.currentRowDeleted = false
 
+                    // Handle blank lines
+                    if (it.size() == 1 && !it.iterator().next()?.trim()) {
+                        csvPrinter.printRecord()
+                        return
+                    }
+
                     if (it.getComment() != null && it.getComment().length() > 0) {
                         csvPrinter.printComment(it.getComment())
                     }
@@ -255,7 +261,10 @@ abstract class DSLScriptBase extends PipelineScript {
                         if (!headerMap.containsKey(property)) {
                             throw new IllegalArgumentException('[' + property + '] not contained in CSV headers')
                         }
-                        delegate.get(property)
+                        // Value could be null if line is truncated (i.e., has fewer fields than there are headers)
+                        // Force it to empty string to avoid NPE in scripts.
+                        def value = delegate.get(property)
+                        value == null ? "" : value
                     }
 
                     rule(values)

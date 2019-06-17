@@ -13,7 +13,7 @@ dependencies {
     compile 'commons-io:commons-io'
     compile 'jaxen:jaxen:1.1.4'
     compile 'net.sf.saxon:Saxon-HE:9.7.0-21'
-    compile 'org.codehaus.groovy:groovy-all:2.5.6'
+    compile 'org.codehaus.groovy:groovy:2.5.6'
     compile 'org.jdom:jdom2:2.0.6'
     compile 'org.apache.commons:commons-lang3'
 

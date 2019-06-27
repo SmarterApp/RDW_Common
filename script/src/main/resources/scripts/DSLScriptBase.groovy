@@ -401,6 +401,7 @@ abstract class DSLScriptBase extends PipelineScript {
             new XMLOutputter().with {
                 format = Format.getRawFormat()
                 format.setLineSeparator(LineSeparator.NONE)
+                format.setOmitDeclaration(true)
                 output(getProperty('document'), outputStream)
             }
 
@@ -413,6 +414,7 @@ abstract class DSLScriptBase extends PipelineScript {
             new XMLOutputter().with {
                 format = Format.getRawFormat()
                 format.setLineSeparator(LineSeparator.NONE)
+                format.setOmitDeclaration(true)
                 output(getProperty('document'), stringWriter)
             }
 

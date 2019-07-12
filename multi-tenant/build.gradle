@@ -8,6 +8,7 @@ dependencies {
     compileOnly 'org.springframework.boot:spring-boot-starter-jdbc'
     compileOnly 'org.springframework.cloud:spring-cloud-starter-stream-rabbit'
     compileOnly 'org.springframework:spring-messaging'
+    compileOnly 'org.springframework.cloud:spring-cloud-starter-config'
 
     testCompile 'org.mockito:mockito-inline'  // to mock final classes
     testCompile 'org.springframework:spring-test'

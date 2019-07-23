@@ -1,5 +1,5 @@
 dependencies {
-    compile 'com.google.code.gson:gson:2.8.5'
+    compile 'com.google.code.gson:gson'
     compile 'com.google.guava:guava'
     compile 'org.springframework:spring-context'
     testCompile 'org.springframework:spring-test'
@@ -9,5 +9,5 @@ dependencies {
     compile 'javax.validation:validation-api'
 
     // fixes java 8 time marshaling
-    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.7'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
 }

@@ -2,7 +2,7 @@ dependencies {
     compile 'javax.validation:validation-api:+'
 
     compile 'com.google.guava:guava'
-    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.7'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
 
     compile 'org.springframework:spring-core'
     compile 'org.springframework:spring-web'

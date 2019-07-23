@@ -52,6 +52,14 @@ subprojects {
       dependency 'org.mockito:mockito-core:2.23.4'
       dependency 'org.mockito:mockito-inline:2.23.4'
 
+      // jackson
+      dependency 'com.fasterxml.jackson.core:jackson-annotations:2.9.9'
+      dependency 'com.fasterxml.jackson.core:jackson-core:2.9.9'
+      dependency 'com.fasterxml.jackson.core:jackson-databind:2.9.9.1'
+      dependency 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.9'
+      dependency 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.9'
+      dependency 'com.fasterxml.jackson.datatype:jackson-datatype-guava:2.9.9'
+
       // Woodstox STAX2 XML stream processing API and required
       // Sun Multi-Schema Validation libraries
       dependency 'org.codehaus.woodstox:stax2-api:4.1'

@@ -19,12 +19,11 @@ spring:
                    &socketTimeout=${spring.datasource.socket-timeout:40000}\
                    "
     url: "${spring.datasource.url-parts.protocol}//${spring.datasource.url-parts.hosts}/${spring.datasource.url-parts.database}?${spring.datasource.url-parts.properties}"
-    jdbcInterceptors: "QueryTimeoutInterceptor(queryTimeout=${spring.datasource.query-timeout:30})"
     username: root
     password:
     testWhileIdle: true
     validationQuery: SELECT 1
-    validationQueryTimeout: 10000
+    validationInterval: 35000
     driverClassName: com.mysql.jdbc.Driver
     initialize: false
     initialSize: 4

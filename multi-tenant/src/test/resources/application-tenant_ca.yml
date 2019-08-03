@@ -16,7 +16,6 @@ spring:
         username: "tenant_ca_user"
         password: "tenant_ca_password"
         schema-search-path: "ca_schema"
-        validationQueryTimeout: 50
 archive:
   tenants:
     CA:

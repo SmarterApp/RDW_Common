@@ -21,3 +21,11 @@ archive:
     CA:
       uri-root: "s3://ca-archive"
       path-prefix: "/ca"
+
+validation:
+  tenants:
+    CA:
+      requiredDataElements:
+        - FirstName
+        - LastOrSurname
+        - Birthdate

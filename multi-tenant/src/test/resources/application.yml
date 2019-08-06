@@ -41,3 +41,14 @@ archive:
   s3-secret-key: testsecret
   s3-region-static: us-west-2
   s3-sse: testsse
+
+validation:
+  requiredDataElements:
+    - FirstName
+    - LastOrSurname
+    - Birthdate
+    - Sex
+    - EconomicDisadvantageStatus
+    - IDEAIndicator
+    - Completeness
+    - AdministrationCondition

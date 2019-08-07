@@ -52,3 +52,18 @@ validation:
     - IDEAIndicator
     - Completeness
     - AdministrationCondition
+
+task:
+  update-organizations:
+    art-client:
+      groups-of-districts-url: https://art-deployment.sbtds.org/rest/groupofdistrict?stateAbbreviation={state}&pageSize=1000
+      districts-url: https://art-deployment.sbtds.org/rest/district?stateAbbreviation={state}&pageSize=5000
+      groups-of-schools-url: https://art-deployment.sbtds.org/rest/groupofinstitution?stateAbbreviation={state}&pageSize=1000
+      schools-url:
+      status-url: https://art-deployment.sbtds.org/rest/status
+      oauth2:
+        access-token-uri: https://sso-deployment.sbtds.org:443/auth/oauth2/access_token?realm=/sbac
+        client-id: sbacdw
+        client-secret:
+        username: prime.user@example.com
+        password:

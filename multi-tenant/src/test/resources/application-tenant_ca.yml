@@ -29,3 +29,15 @@ validation:
         - FirstName
         - LastOrSurname
         - Birthdate
+
+task:
+  update-organizations:
+    art-client:
+      tenants:
+        CA:
+          oauth2:
+            access-token-uri: https://example.org:443/auth/oauth2/access_token?realm=/catest
+            client-id: catest
+            client-secret: caSecret!
+            username: ca.user@example.com
+            password: caPwd!

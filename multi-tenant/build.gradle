@@ -5,6 +5,7 @@ configurations {
 dependencies {
     compile 'org.springframework:spring-context'
     compile 'com.google.guava:guava'
+    compile 'org.springframework.security.oauth:spring-security-oauth2'
     compileOnly 'org.springframework.boot:spring-boot-starter-jdbc'
     compileOnly 'org.springframework.cloud:spring-cloud-starter-stream-rabbit'
     compileOnly 'org.springframework:spring-messaging'

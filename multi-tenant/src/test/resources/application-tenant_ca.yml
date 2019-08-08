@@ -29,3 +29,18 @@ validation:
         - FirstName
         - LastOrSurname
         - Birthdate
+
+task:
+  update-organizations:
+    art-client:
+      tenants:
+        CA:
+          oauth2:
+            username: ca.user@example.com
+            password: caPwd!
+    import-service-client:
+      tenants:
+        CA:
+          oauth2:
+            username: ca.user@example.com
+            password: caPwd!

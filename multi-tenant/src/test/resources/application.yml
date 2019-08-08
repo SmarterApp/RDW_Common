@@ -67,3 +67,10 @@ task:
         client-secret:
         username: prime.user@example.com
         password:
+    import-service-client:
+      organizations-imports-url: http://localhost:8080/organizations/imports
+      status-url: http://localhost:8081/status
+      oauth2:
+        access-token-uri: https://sso-deployment.sbtds.org:443/auth/oauth2/access_token?realm=/sbac
+        client-id: sbacdw
+        client-secret:

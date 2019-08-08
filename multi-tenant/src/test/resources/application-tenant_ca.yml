@@ -36,8 +36,11 @@ task:
       tenants:
         CA:
           oauth2:
-            access-token-uri: https://example.org:443/auth/oauth2/access_token?realm=/catest
-            client-id: catest
-            client-secret: caSecret!
+            username: ca.user@example.com
+            password: caPwd!
+    import-service-client:
+      tenants:
+        CA:
+          oauth2:
             username: ca.user@example.com
             password: caPwd!

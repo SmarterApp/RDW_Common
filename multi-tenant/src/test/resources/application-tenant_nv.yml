@@ -24,10 +24,9 @@ archive:
       uri-root: "file://tmp"
       path-prefix: "/nv"
 
-task:
-  send-reconciliation-report:
-    tenants:
-      NV:
-        log: false
-        archives:
-          - uri-root: file:///tmp/
+taskSendReconciliationReport:
+  tenants:
+    NV:
+      log: false
+      archives:
+        - uri-root: file:///tmp/

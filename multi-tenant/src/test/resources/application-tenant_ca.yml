@@ -30,28 +30,28 @@ validation:
         - LastOrSurname
         - Birthdate
 
-task:
-  update-organizations:
-    art-client:
-      tenants:
-        CA:
-          oauth2:
-            username: ca.user@example.com
-            password: caPwd!
-    import-service-client:
-      tenants:
-        CA:
-          oauth2:
-            username: ca.user@example.com
-            password: caPwd!
-  send-reconciliation-report:
-    tenants:
-      CA:
-        log: false
-        archives:
-          - uri-root: file:///tmp/
-          - uri-root: s3:///bucket
-            s3-access-key: AccessKey
-            s3-secret-key: SecretKey
-            s3-region-static: us-west-2
-            s3-sse: AES256
+taskUpdateOrganizationsArtClient:
+  tenants:
+    CA:
+      oauth2:
+        username: ca.user@example.com
+        password: caPwd!
+
+taskUpdateOrganizationsImportServiceClient:
+  tenants:
+    CA:
+      oauth2:
+        username: ca.user@example.com
+        password: caPwd!
+
+taskSendReconciliationReport:
+  tenants:
+    CA:
+      log: false
+      archives:
+        - uri-root: file:///tmp/
+        - uri-root: s3:///bucket
+          s3-access-key: AccessKey
+          s3-secret-key: SecretKey
+          s3-region-static: us-west-2
+          s3-sse: AES256

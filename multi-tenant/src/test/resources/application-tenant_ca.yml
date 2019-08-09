@@ -48,6 +48,7 @@ taskSendReconciliationReport:
   tenants:
     CA:
       log: false
+      query: status=PROCESSED&after=-PT24H
       archives:
         - uri-root: file:///tmp/
         - uri-root: s3:///bucket

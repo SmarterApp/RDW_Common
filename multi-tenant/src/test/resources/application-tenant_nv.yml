@@ -27,6 +27,7 @@ archive:
 taskSendReconciliationReport:
   tenants:
     NV:
-      log: false
+      log: true
+      query: status=PROCESSED&after=-PT12H
       archives:
         - uri-root: file:///tmp/

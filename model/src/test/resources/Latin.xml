@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Subject code="Latin" name="Latin Proficiency">
+  <Messages>
+    <Message key="sum.performance-info"><![CDATA[Student scores on the Latin Proficiency assessments are assigned to one of four achievement levels based on the scale score.]]></Message>
+  </Messages>
+  <AssessmentTypes>
+    <AssessmentType code="sum" name="Latin " longName="Summative Assessment" targetReport="false" printedReport="true">
+      <OverallScoring name="Overall - General" minScore="1150" maxScore="1950">
+        <PerformanceLevels standardCutoff="3">
+          <PerformanceLevel level="1" name="Level 1" shortName="Level 1" color="maroon"/>
+          <PerformanceLevel level="2" name="Level 2" shortName="Level 2" color="orange"/>
+          <PerformanceLevel level="3" name="Level 3" shortName="Level 3" color="blue"/>
+          <PerformanceLevel level="4" name="Level 4" shortName="Level 4" color="green"/>
+        </PerformanceLevels>
+      </OverallScoring>
+      <ClaimScoring name="Domain">
+        <PerformanceLevels>
+          <PerformanceLevel level="1" name="Progressing" shortName="Progressing" suffix="Standard" color="sb-iab-red"/>
+          <PerformanceLevel level="2" name="Well Developed" shortName="Developed" suffix="Well" color="sb-iab-yellow"/>
+          <PerformanceLevel level="3" name="error need only 2" shortName="error need only 2" suffix="error need only 2" color="blue-dark"/>
+        </PerformanceLevels>
+      </ClaimScoring>
+    </AssessmentType>
+  </AssessmentTypes>
+  <ReportGrades>
+    <ReportGrade code="05">
+      <ReportAssessmentTypes>
+        <ReportAssessmentType code="sum">
+          <ClaimAchievementMessage><![CDATA[{0}'s results are also reported out into the five domains (i.e., areas) that together make up Latin proficiency: Translation, Grammer and Syntax, Reading Comprehension, Vocabulary and Listening and Speaking. To view a description of the student's achievement level claim (i.e., area), select either [Progressing], or [Well Developed] from the student-level selections available in the table below.]]></ClaimAchievementMessage>
+          <ReportPerformanceLevels>
+            <ReportPerformanceLevel level="1"><![CDATA[{0} did not meet the standard for Latin proficiency needed for likely success in future coursework. claim.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="2"><![CDATA[{0} nearly met the standard for Latin proficiency needed for likely success in future coursework.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="3"><![CDATA[{0} has made progress and met the standard for Latin proficiency. {0} appears ready for future coursework.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="4"><![CDATA[{0} has made progress and exceeded the standard for Latin proficiency. {0} appears ready for future coursework.]]></ReportPerformanceLevel>
+          </ReportPerformanceLevels>
+        </ReportAssessmentType>
+      </ReportAssessmentTypes>
+    </ReportGrade>
+    <ReportGrade code="08">
+      <ReportAssessmentTypes>
+        <ReportAssessmentType code="sum">
+          <ClaimAchievementMessage><![CDATA[{0}'s results are also reported out into the five domains (i.e., areas) that together make up Latin proficiency: Translation, Grammer and Syntax, Reading Comprehension, Vocabulary and Listening and Speaking. To view a description of the student's achievement level claim (i.e., area), select either [Progressing], or [Well Developed] from the student-level selections available in the table below.]]></ClaimAchievementMessage>
+          <ReportPerformanceLevels>
+            <ReportPerformanceLevel level="1"><![CDATA[{0} did not meet the standard for Latin proficiency needed for likely success in future coursework. claim.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="2"><![CDATA[{0} nearly met the standard for Latin proficiency needed for likely success in future coursework.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="3"><![CDATA[{0} has made progress and met the standard for Latin proficiency. {0} appears ready for future coursework.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="4"><![CDATA[{0} has made progress and exceeded the standard for Latin proficiency. {0} appears ready for future coursework.]]></ReportPerformanceLevel>
+          </ReportPerformanceLevels>
+        </ReportAssessmentType>
+      </ReportAssessmentTypes>
+    </ReportGrade>
+    <ReportGrade code="09">
+      <ReportAssessmentTypes>
+        <ReportAssessmentType code="sum">
+          <ClaimAchievementMessage><![CDATA[{0}'s results are also reported out into the five domains (i.e., areas) that together make up Latin proficiency: Translation, Grammer and Syntax, Reading Comprehension, Vocabulary and Listening and Speaking. To view a description of the student's achievement level claim (i.e., area), select either [Progressing], or [Well Developed] from the student-level selections available in the table below.]]></ClaimAchievementMessage>
+          <ReportPerformanceLevels>
+            <ReportPerformanceLevel level="1"><![CDATA[{0} did not meet the standard for Latin proficiency needed for likely success in future coursework. claim.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="2"><![CDATA[{0} nearly met the standard for Latin proficiency needed for likely success in future coursework.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="3"><![CDATA[{0} has made progress and met the standard for Latin proficiency. {0} appears ready for future coursework.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="4"><![CDATA[{0} has made progress and exceeded the standard for Latin proficiency. {0} appears ready for future coursework.]]></ReportPerformanceLevel>
+          </ReportPerformanceLevels>
+        </ReportAssessmentType>
+      </ReportAssessmentTypes>
+    </ReportGrade>
+    <ReportGrade code="10">
+      <ReportAssessmentTypes>
+        <ReportAssessmentType code="sum">
+          <ClaimAchievementMessage><![CDATA[{0}'s results are also reported out into the five domains (i.e., areas) that together make up Latin proficiency: Translation, Grammer and Syntax, Reading Comprehension, Vocabulary and Listening and Speaking. To view a description of the student's achievement level claim (i.e., area), select either [Progressing], or [Well Developed] from the student-level selections available in the table below.]]></ClaimAchievementMessage>
+          <ReportPerformanceLevels>
+            <ReportPerformanceLevel level="1"><![CDATA[{0} did not meet the standard for Latin proficiency needed for likely success in future coursework. claim.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="2"><![CDATA[{0} nearly met the standard for Latin proficiency needed for likely success in future coursework.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="3"><![CDATA[{0} has made progress and met the standard for Latin proficiency. {0} appears ready for future coursework.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="4"><![CDATA[{0} has made progress and exceeded the standard for Latin proficiency. {0} appears ready for future coursework.]]></ReportPerformanceLevel>
+          </ReportPerformanceLevels>
+        </ReportAssessmentType>
+      </ReportAssessmentTypes>
+    </ReportGrade>
+    <ReportGrade code="11">
+      <ReportAssessmentTypes>
+        <ReportAssessmentType code="sum">
+          <ClaimAchievementMessage><![CDATA[{0}'s results are also reported out into the five domains (i.e., areas) that together make up Latin proficiency: Translation, Grammer and Syntax, Reading Comprehension, Vocabulary and Listening and Speaking. To view a description of the student's achievement level claim (i.e., area), select either [Progressing], or [Well Developed] from the student-level selections available in the table below.]]></ClaimAchievementMessage>
+          <ReportPerformanceLevels>
+            <ReportPerformanceLevel level="1"><![CDATA[{0} did not meet the standard for Latin proficiency needed for likely success in future coursework. claim.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="2"><![CDATA[{0} nearly met the standard for Latin proficiency needed for likely success in future coursework.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="3"><![CDATA[{0} has made progress and met the standard for Latin proficiency. {0} appears ready for future coursework.]]></ReportPerformanceLevel>
+            <ReportPerformanceLevel level="4"><![CDATA[{0} has made progress and exceeded the standard for Latin proficiency. {0} appears ready for future coursework.]]></ReportPerformanceLevel>
+          </ReportPerformanceLevels>
+        </ReportAssessmentType>
+      </ReportAssessmentTypes>
+    </ReportGrade>
+  </ReportGrades>
+  <Claims>
+    <Claim code="LAT_T" name="Translation" displayOrder=" 1" scorable="true" organizational="false">
+      <Icon>fa-language</Icon>
+      <Description>Translation</Description>
+    </Claim>
+    <Claim code="LAT_G" name="Grammer and Syntax" displayOrder=" 2" scorable="true" organizational="false">
+      <Icon>fa-pen</Icon>
+      <Description>Grammer and Syntax</Description>
+    </Claim>
+    <Claim code="LAT_R" name="Reading Comprehension" displayOrder=" 3" scorable="true" organizational="false">
+      <Icon>fa-book</Icon>
+      <Description>Reading Comprehension</Description>
+    </Claim>
+    <Claim code="LAT_V" name="Vocabulary" displayOrder=" 4" scorable="true" organizational="false">
+      <Icon>fa-spell-check</Icon>
+      <Description>Vocabulary</Description>
+    </Claim>
+    <Claim code="LAT_L" name="Listening and Speaking" displayOrder=" 5" scorable="true" organizational="false">
+      <Icon>fa-headphones</Icon>
+      <Description>Listening and Speaking</Description>
+    </Claim>
+  </Claims>
+</Subject>

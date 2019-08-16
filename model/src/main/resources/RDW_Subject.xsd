@@ -255,13 +255,15 @@
     <xs:complexType>
       <xs:sequence>
         <!-- The performance-agnostic overall achievement message -->
-        <xs:element name="OverallAchievementMessage" type="xs:string"/>
+        <!-- (optional because it isn't actually used in the report) -->
+        <xs:element name="OverallAchievementMessage" type="xs:string" minOccurs="0"/>
         <!-- The performance-agnostic sub-score achievement message -->
-        <xs:element name="ClaimAchievementMessage" type="xs:string"/>
+        <xs:element name="ClaimAchievementMessage" type="xs:string" minOccurs="0"/>
         <!-- The performance level messages for the student's overall performance -->
         <xs:element ref="ReportPerformanceLevels"/>
         <!-- The claim score messages -->
-        <xs:element ref="ReportClaims"/>
+        <!-- (optional because a subject may not have claims) -->
+        <xs:element ref="ReportClaims" minOccurs="0"/>
       </xs:sequence>
       <!-- The assessment type code -->
       <xs:attribute name="code" use="required" type="AssessmentTypeCode"/>
@@ -398,7 +400,7 @@
   <xs:element name="Standards">
     <xs:complexType>
       <xs:sequence>
-        <xs:element maxOccurs="unbounded" ref="Standard"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Standard"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>

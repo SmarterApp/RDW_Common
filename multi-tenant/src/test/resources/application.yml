@@ -73,3 +73,7 @@ taskUpdateOrganizationsImportServiceClient:
     access-token-uri: https://sso-deployment.sbtds.org:443/auth/oauth2/access_token?realm=/sbac
     client-id: sbacdw
     client-secret:
+
+taskSendReconciliationReport:
+  query: DEFAULT QUERY
+  log: false

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Subject code="ELA" name="ELA">
+  <Messages>
+    <Message key="standard-description"><![CDATA[This column reflects the Common Core State Standard(s) associated with a test item. Test items may be associated with more than one standard.  For example, a question that asks students to evaluate research sources may assess both reading and research skills.  For more information, see the <a href=\"https://portal.smarterbalanced.org/library/en/english-language-artsliteracy-content-specifications.pdf\" target=\"_blank\">English Language Arts Content Specifications</a>.]]></Message>
+  </Messages>
+  <AssessmentTypes>
+    <AssessmentType code="sum" name ="Summative" longName="Summative Assessment">
+      <OverallScoring>
+        <PerformanceLevels standardCutoff="3">
+          <PerformanceLevel level="1" name="Did Not Meet Standard" color="maroon"/>
+          <PerformanceLevel level="2" name="Nearly Met Standard" color="gray-darkest"/>
+          <PerformanceLevel level="3" name="Met Standard" color="green-dark"/>
+          <PerformanceLevel level="4" name="Exceeded Standard" color="blue-dark"/>
+        </PerformanceLevels>
+      </OverallScoring>
+      <ClaimScoring>
+        <PerformanceLevels>
+          <PerformanceLevel level="1" name="Below Standard" shortName="Below" suffix="Standard" color="sb-iab-red"/>
+          <PerformanceLevel level="2" name="Near Standard" shortName="Near" suffix="Standard" color="sb-iab-yellow"/>
+          <PerformanceLevel level="3" name="Above Standard" shortName="Above" suffix="Standard" color="sb-iab-green"/>
+        </PerformanceLevels>
+      </ClaimScoring>
+    </AssessmentType>
+  </AssessmentTypes>
+  <Claims>
+    <Claim code="SOCK_LS" name="Listening" organizational="false" dataOrder="6" displayOrder="2">
+      <Icon>fa-lightbulb-o</Icon>
+    </Claim>
+    <Claim code="SOCK_R" name="Reading" organizational="false" displayOrder="1">
+      <Icon>fa-book</Icon>
+    </Claim>
+    <Claim code="1-IT" name="Reading" scorable="false">
+      <Description>Read Analytically: Informational Text - Students can read closely and analytically to comprehend a range of increasingly complex literary and informational texts.</Description>
+    </Claim>
+    <Claim code="1-LT" name="Reading" scorable="false">
+      <Description>Read Analytically: Literary Text - Students can read closely and analytically to comprehend a range of increasingly complex literary and informational texts.</Description>
+    </Claim>
+    <Claim code="2-W" name="Writing" dataOrder="3" displayOrder="3">
+      <Icon>fa-edit</Icon>
+      <Description>Write Effectively - Students can produce effective and well-grounded writing for a range of purposes and audiences.</Description>
+    </Claim>
+    <Claim code="3-L" name="Listening" scorable="false">
+      <Description>Speak and Listen purposefully - Students can employ effective speaking and listening skills for a range of purposes and audiences.</Description>
+    </Claim>
+    <Claim code="3-S" name="Listening" scorable="false">
+      <Description>Speak and Listen purposefully - Students can employ effective speaking and listening skills for a range of purposes and audiences.</Description>
+    </Claim>
+    <Claim code="4-CR" name="Research and Inquiry" displayOrder="4">
+      <Icon>fa-question</Icon>
+      <Description>Conduct Research - Students can engage in research/ inquiry to investigate topics and to analyze, integrate, and present information.</Description>
+    </Claim>
+  </Claims>
+</Subject>

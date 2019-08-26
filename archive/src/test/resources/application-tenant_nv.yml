@@ -1,0 +1,14 @@
+#simulating the spring cloud config search path feature with "tenant_nv" profile for testing purposes
+tenantProperties:
+  tenants:
+    NVX:
+      id: NV
+      key: NVX #To verify id and key need not match
+      name: Nevada
+      description: Some Descriptive Text For NV
+
+archive:
+  tenants:
+    NVX:
+      uri-root: "file://tmp"
+      path-prefix: "nv"

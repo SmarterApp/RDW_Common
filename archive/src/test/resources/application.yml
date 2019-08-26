@@ -1,0 +1,7 @@
+archive:
+  #uri-root:
+  #path-prefix:
+  #s3-access-key:
+  #s3-secret-key:
+  s3-region-static: us-west-2
+  #s3-sse:

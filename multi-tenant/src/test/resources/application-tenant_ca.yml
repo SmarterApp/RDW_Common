@@ -1,0 +1,57 @@
+#simulating the spring cloud config search path feature with "tenant_ca" profile for testing purposes
+tenantProperties:
+  tenants:
+    CA:
+      id: CA
+      key: CA
+      name: California
+      description: Some Descriptive Text For CA
+
+spring:
+  datasource:
+    tenants:
+      CA:
+        url-parts:
+          database: "tenant_ca"
+        username: "tenant_ca_user"
+        password: "tenant_ca_password"
+        schema-search-path: "ca_schema"
+archive:
+  tenants:
+    CA:
+      uri-root: "s3://ca-archive"
+      path-prefix: "/ca"
+
+validation:
+  tenants:
+    CA:
+      requiredDataElements:
+        - FirstName
+        - LastOrSurname
+        - Birthdate
+
+taskUpdateOrganizationsArtClient:
+  tenants:
+    CA:
+      oauth2:
+        username: ca.user@example.com
+        password: caPwd!
+
+taskUpdateOrganizationsImportServiceClient:
+  tenants:
+    CA:
+      oauth2:
+        username: ca.user@example.com
+        password: caPwd!
+
+taskSendReconciliationReport:
+  tenants:
+    CA:
+      query: status=PROCESSED&after=-PT24H
+      archives:
+        - uri-root: file:///tmp/
+        - uri-root: s3:///bucket
+          s3-access-key: AccessKey
+          s3-secret-key: SecretKey
+          s3-region-static: us-west-2
+          s3-sse: AES256

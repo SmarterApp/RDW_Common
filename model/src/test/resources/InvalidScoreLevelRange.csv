@@ -1,0 +1,3 @@
+AssessmentId,AssessmentName,AssessmentSubject,AssessmentGrade,AssessmentType,AssessmentSubtype,AssessmentLabel,AssessmentVersion,AcademicYear,OverallLow1,OverallHigh1,OverallLow2,OverallHigh2,OverallLow3,OverallHigh3,OverallLow4,OverallHigh4
+# first score range is invalid
+KG-Spring-2017-2018,GRADE-KG,TEST,KG,summative,SUM,Kindergarten,112,2018,1373,1150,1374,1421,1422,1473,1474,1700

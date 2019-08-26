@@ -1,4 +1,6 @@
 dependencies {
+    compile project(':rdw-common-multi-tenant')
+
     compile 'com.google.guava:guava'
 
     // For StatusMvcEndpoint

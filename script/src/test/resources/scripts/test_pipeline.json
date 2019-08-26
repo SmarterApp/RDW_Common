@@ -1,0 +1,11 @@
+{
+  "name": "test_pipeline",
+  "version": "1.0",
+  "type": "PIPELINE",
+  "rollbackVersion": "",
+  "nodeDefinitions": [{
+    "name": "trt_transform",
+    "version": "1.0",
+    "type": "USER_NODE"
+  }]
+}

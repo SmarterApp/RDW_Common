@@ -1,5 +1,13 @@
 dependencies {
+    compile 'com.google.code.gson:gson'
+    compile 'com.google.guava:guava'
     compile 'org.springframework:spring-context'
     testCompile 'org.springframework:spring-test'
     testRuntime 'org.yaml:snakeyaml:+'
+
+    // for @NotNull
+    compile 'javax.validation:validation-api'
+
+    // fixes java 8 time marshaling
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
 }

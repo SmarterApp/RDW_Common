@@ -1,0 +1,315 @@
+<!-- Node junit attributes added to original file to enable tests -->
+<TDSReport>
+    <Test grade="4" mode="online" contract="SBAC" bankKey="10200" testId="SBAC-IAB-FIXED-G4M-G-MATH-4" subject="MATH"
+          name="(SBAC)SBAC-IAB-FIXED-G4M-G-MATH-4-Winter-2016-2017" handScoreProject="0" assessmentType="interim" academicYear="2016" assessmentVersion="9786"/>
+    <Examinee isDemo="0" key="4054">
+        <ExamineeAttribute name="Birthdate" value="1900-01-01" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="FirstName" value="Name116" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="Sex" value="Female" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="GradeLevelWhenAssessed" value="04" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="LastOrSurname" value="LastName116" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="StudentIdentifier" value="AFOURTHGRADER17" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="MiddleName" value="MiddleName116" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="AlternateSSID" value="FOURTHGRADER17" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="HispanicOrLatinoEthnicity" value="NO" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="AmericanIndianOrAlaskaNative" value="NO" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="Asian" value="YES" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="BlackOrAfricanAmerican" value="NO" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="White" value="NO" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="NativeHawaiianOrOtherPacificIslander" value="NO" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="DemographicRaceTwoOrMoreRaces" value="NO" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="IDEAIndicator" value="NO" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="LEPStatus" value="NO" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="Section504Status" value="Unknown/Cannot Provide" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="EconomicDisadvantageStatus" value="NO" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="MigrantStatus" value="NO" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="LanguageCode" value="" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="EnglishLanguageProficiencyLevel" value="" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="FirstEntryDateIntoUSSchool" value="" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="LimitedEnglishProficiencyEntryDate" value="" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="LEPExitDate" value="" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="TitleIIILanguageInstructionProgramType" value="" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="PrimaryDisabilityType" value="" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeAttribute name="Birthdate" value="1900-01-01" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="FirstName" value="Name116" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="Sex" value="Female" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="GradeLevelWhenAssessed" value="04" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="LastOrSurname" value="LastName116" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="StudentIdentifier" value="AFOURTHGRADER17" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="MiddleName" value="MiddleName116" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="AlternateSSID" value="FOURTHGRADER17" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="HispanicOrLatinoEthnicity" value="NO" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="AmericanIndianOrAlaskaNative" value="NO" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="Asian" value="YES" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="BlackOrAfricanAmerican" value="NO" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="White" value="NO" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="NativeHawaiianOrOtherPacificIslander" value="NO" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="DemographicRaceTwoOrMoreRaces" value="NO" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="IDEAIndicator" value="NO" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="LEPStatus" value="NO" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="Section504Status" value="NO" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="EconomicDisadvantageStatus" value="NO" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="MigrantStatus" value="NO" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="LanguageCode" value="" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="EnglishLanguageProficiencyLevel" value="" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="FirstEntryDateIntoUSSchool" value="" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="LimitedEnglishProficiencyEntryDate" value="" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="LEPExitDate" value="" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="TitleIIILanguageInstructionProgramType" value="" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeAttribute name="PrimaryDisabilityType" value="" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeRelationship name="ResponsibleDistrictIdentifier" value="UCLALS" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeRelationship name="OrganizationName" value="UCLA" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeRelationship name="ResponsibleInstitutionIdentifier" value="APTEST1" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeRelationship name="NameOfInstitution" value="APTESTSCHOOL" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeRelationship name="StateName" value="ARMED FORCES PACIFIC" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeRelationship name="StateAbbreviation" value="AP" context="INITIAL" contextDate="2016-10-12T21:51:46.003"/>
+        <ExamineeRelationship name="ResponsibleDistrictIdentifier" value="UCLALS" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeRelationship name="OrganizationName" value="UCLA" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeRelationship name="ResponsibleInstitutionIdentifier" value="APTEST1" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeRelationship name="NameOfInstitution" value="APTESTSCHOOL" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeRelationship name="StateName" value="ARMED FORCES PACIFIC" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+        <ExamineeRelationship name="StateAbbreviation" value="AP" context="FINAL" contextDate="2016-10-12T22:00:49.069"/>
+    </Examinee>
+    <Opportunity database="session" key="41345bd8-0b4b-43d3-8de5-0c281582e12d" taId="uat_lab15@mailinator.com" taName="UAT Lab15" sessionId="Lab-30" windowId="ANNUAL"
+                 server="ip-172-19-0-179" qaLevel="" clientName="SBAC" reportingVersion="0" abnormalStarts="0" ftCount="0" dateCompleted="2016-10-12T22:00:49.658"
+                 assessmentParticipantSessionPlatformUserAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36"
+                 itemCount="11" pauseCount="0" completeStatus="Complete" status="completed" completeness="Complete" statusDate="2016-10-12T22:00:49.658" administrationCondition=""
+                 startDate="2016-10-12T21:52:34.065" oppId="100149" windowOpportunity="1" opportunity="1" gracePeriodRestarts="0" effectiveDate="2016-08-29">
+        <Segment id="(SBAC)SBAC-IAB-FIXED-G4M-G-MATH-4-Winter-2016-2017" position="1" formId="IAB-G4M-G-2017 ENG" formKey="200-18740" algorithm="fixedform"
+                 algorithmVersion="0"/>
+        <Accommodation code="ENU" type="Language" value="English" segment="0"/>
+        <Accommodation code="NEA0" type="Non-Embedded Accommodations" value="None" segment="0"/>
+        <Accommodation code="NEDS0" type="Non-Embedded Designated Supports" value="None" segment="0"/>
+        <Accommodation code="TDS_APC_PSP" type="Audio Playback Controls" value="Play Stop and Pause" segment="0"/>
+        <Accommodation code="TDS_ASL0" type="American Sign Language" value="Do not show ASL videos" segment="0"/>
+        <Accommodation code="TDS_ClosedCap0" type="Closed Captioning" value="Closed Captioning Not Available" segment="0"/>
+        <Accommodation code="TDS_ExpandablePassages1" type="Expandable Passages" value="Expandable Passages On" segment="0"/>
+        <Accommodation code="TDS_FT_Serif" type="Font Type" value="Times New Roman" segment="0"/>
+        <Accommodation code="TDS_F_S14" type="Passage Font Size" value="14pt" segment="0"/>
+        <Accommodation code="TDS_GN1" type="Global Notes" value="Global Notes On" segment="0"/>
+        <Accommodation code="TDS_Highlight1" type="Highlight" value="True" segment="0"/>
+        <Accommodation code="TDS_HWPlayback" type="Hardware Checks" value="Check Playback Capabilities" segment="0"/>
+        <Accommodation code="TDS_IF_S14" type="Item Font Size" value="14pt Items" segment="0"/>
+        <Accommodation code="TDS_ITM1" type="Item Tools Menu" value="On" segment="0"/>
+        <Accommodation code="TDS_ITTC0" type="IntraTest TTS Controls" value="IntraTest TTS Controls Off" segment="0"/>
+        <Accommodation code="TDS_MfR1" type="Mark for Review" value="True" segment="0"/>
+        <Accommodation code="TDS_Other" type="Other" value="None" segment="0"/>
+        <Accommodation code="TDS_PM0" type="Permissive Mode" value="Permissive Mode Disabled" segment="0"/>
+        <Accommodation code="TDS_PS_L0" type="Print Size" value="No default zoom applied" segment="0"/>
+        <Accommodation code="TDS_RSL_ListView" type="Review Screen Layout" value="List" segment="0"/>
+        <Accommodation code="TDS_SCNotepad" type="Student Comments" value="On" segment="0"/>
+        <Accommodation code="TDS_ST1" type="Strikethrough" value="True" segment="0"/>
+        <Accommodation code="TDS_SVC1" type="System Volume Control" value="Show widget" segment="0"/>
+        <Accommodation code="TDS_TPI_ResponsesFix" type="Test Progress Indicator" value="Show indicator as a fraction and adjust to test length" segment="0"/>
+        <Accommodation code="TDS_TS_Universal" type="Test Shell" value="Universal Shell" segment="0"/>
+        <Accommodation code="TDS_WL_Glossary" type="Word List" value="English Glossary" segment="0"/>
+        <Score measureOf="Overall" measureLabel="Attempted" value="Y" standardError=""/>
+        <Score measureOf="Overall" measureLabel="ThetaScore" value="1.02243078695094" standardError="0.641280451016051"/>
+        <Score measureOf="Overall" measureLabel="ScaleScore" value="2595.97876140521" standardError="50.8535397655728"/>
+        <Score measureOf="Overall" measureLabel="PerformanceLevel" value="3" standardError=""/>
+        <Score measureOf="Print Size|TDS_PS_L0" measureLabel="Accommodation" value="3" standardError="0"/>
+        <!-- Sample Multiple Choice (MC) -->
+        <Item adminDate="2018-08-27T15:38:47.967-05:00" bankKey="10200" clientId="" dropped="0" format="IAT"
+              isSelected="1" key="46849" mimeType="text/xml" numberVisits="1" operational="1" pageNumber="1"
+              pageTime="4300" pageVisits="1" position="1" responseDuration="4300" score="1" scoreStatus="SCORED"
+              segmentId="(SBAC)SBAC-GEN-INTR-ICA-ELA-COMBINED-6-SEG1-Winter-2018-2019">
+            <Response junit="mc" date="2018-08-27T15:38:51.637-05:00" key="1a43cab1-baea-4b6d-9d28-34f447e6b53e" type="">&lt;itemResponse&gt;&lt;response
+                id="choiceInteraction_1.RESPONSE"&gt;&lt;value&gt;choiceInteraction_1-choice-A&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt;
+            </Response>
+            <ScoreInfo maxScore="1" scoreDimension="overall" scorePoint="1" scoreStatus="Scored">
+                <ScoreRationale/>
+            </ScoreInfo>
+        </Item>
+        <!-- Sample Multiple Select (MS) -->
+        <Item adminDate="2018-08-27T15:38:47.973-05:00" bankKey="10200" clientId="" dropped="0" format="IAT"
+              isSelected="1" key="41340" mimeType="text/xml" numberVisits="1" operational="1" pageNumber="2"
+              pageTime="2600" pageVisits="1" position="2" responseDuration="2600" score="0" scoreStatus="SCORED"
+              segmentId="(SBAC)SBAC-GEN-INTR-ICA-ELA-COMBINED-6-SEG1-Winter-2018-2019">
+            <Response junit="ms" date="2018-08-27T15:38:54.433-05:00" key="3e6f56d2-53d5-497e-a34d-a7a332fbfd96" type="">&lt;itemResponse&gt;&lt;response
+                id="choiceInteraction_1.RESPONSE"&gt;&lt;value&gt;choiceInteraction_1-choice-A&lt;/value&gt;&lt;value&gt;choiceInteraction_1-choice-C&lt;/value&gt;&lt;value&gt;choiceInteraction_1-choice-D&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt;
+            </Response>
+            <ScoreInfo maxScore="1" scoreDimension="overall" scorePoint="0" scoreStatus="Scored">
+                <ScoreRationale/>
+            </ScoreInfo>
+        </Item>
+        <!-- Sample EBSR -->
+        <Item adminDate="2018-08-27T15:38:51.64-05:00" bankKey="10200" clientId="" dropped="0" format="IAT"
+              isSelected="1" key="37115" mimeType="text/xml" numberVisits="1" operational="1" pageNumber="4"
+              pageTime="22400" pageVisits="1" position="5" responseDuration="22400" score="0" scoreStatus="SCORED"
+              segmentId="(SBAC)SBAC-GEN-INTR-ICA-ELA-COMBINED-6-SEG1-Winter-2018-2019">
+            <Response junit="ebsr" date="2018-08-27T15:39:05.14-05:00" key="3d3b10b9-df2d-4410-8751-88080d832347" type="">&lt;itemResponse&gt;&lt;response
+                id="choiceInteraction_1.RESPONSE"&gt;&lt;value&gt;choiceInteraction_1-choice-B&lt;/value&gt;&lt;/response&gt;&lt;response
+                id="choiceInteraction_2.RESPONSE"&gt;&lt;value&gt;choiceInteraction_2-choice-A&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt;
+            </Response>
+            <ScoreInfo maxScore="1" scoreDimension="overall" scorePoint="0" scoreStatus="Scored">
+                <ScoreRationale/>
+            </ScoreInfo>
+        </Item>
+        <!-- Sample Match Interaction (MI) -->
+        <Item adminDate="2018-09-05T16:42:07.67-05:00" bankKey="10200" clientId="" dropped="0" format="IAT" isSelected="1"
+              key="92135" mimeType="text/xml" numberVisits="1" operational="1" pageNumber="2" pageTime="21100"
+              pageVisits="1" position="2" responseDuration="21100" score="1" scoreStatus="SCORED"
+              segmentId="(SBAC)SBAC-GEN-INTR-IAB-MA-NS-8-Winter-2018-2019">
+            <Response junit="mi" date="2018-09-05T16:42:48.843-05:00" key="dde221bd-1840-4da2-8e58-335ed79a22c7" type="">&lt;itemResponse&gt;&lt;response
+                id="matchInteraction_1.RESPONSE"&gt;&lt;value&gt;matchInteraction_1-1 matchInteraction_1-a&lt;/value&gt;&lt;value&gt;matchInteraction_1-2
+                matchInteraction_1-b&lt;/value&gt;&lt;value&gt;matchInteraction_1-3 matchInteraction_1-b&lt;/value&gt;&lt;value&gt;matchInteraction_1-4
+                matchInteraction_1-a&lt;/value&gt;&lt;value&gt;matchInteraction_1-5 matchInteraction_1-a&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt;
+            </Response>
+            <ScoreInfo maxScore="1" scoreDimension="overall" scorePoint="1" scoreStatus="Scored">
+                <ScoreRationale/>
+            </ScoreInfo>
+        </Item>
+        <!-- Sample Table Interaction (TI) (from xls, no sample in TRTs) -->
+        <Item adminDate="2018-09-05T16:42:07.67-05:00" bankKey="10200" clientId="" dropped="0" format="IAT" isSelected="1"
+              key="92135" mimeType="text/xml" numberVisits="1" operational="1" pageNumber="2" pageTime="21100"
+              pageVisits="1" position="2" responseDuration="21100" score="1" scoreStatus="SCORED"
+              segmentId="(SBAC)SBAC-GEN-INTR-IAB-MA-NS-8-Winter-2018-2019">
+            <Response junit="ti" date="2018-09-05T16:42:48.843-05:00" key="dde221bd-1840-4da2-8e58-335ed79a22c7" type="">&lt;itemResponse&gt;
+                &lt;response id="tableInteraction_1.CUSTOM"&gt;&lt;value&gt;&amp;lt;responseSpec&amp;gt;&amp;lt;responseTable&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;th id="col0" /&amp;gt;&amp;lt;th id="col1" /&amp;gt;&amp;lt;th id="col2" /&amp;gt;&amp;lt;th id="col3" /&amp;gt;&amp;lt;th id="col4" /&amp;gt;&amp;lt;th id="col5" /&amp;gt;&amp;lt;th id="col6" /&amp;gt;&amp;lt;th id="col7" /&amp;gt;&amp;lt;th id="col8" /&amp;gt;&amp;lt;th id="col9" /&amp;gt;&amp;lt;th id="col10" /&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td /&amp;gt;&amp;lt;td&amp;gt;B&amp;lt;/td&amp;gt;&amp;lt;td /&amp;gt;&amp;lt;td /&amp;gt;&amp;lt;td&amp;gt;A&amp;lt;/td&amp;gt;&amp;lt;td /&amp;gt;&amp;lt;td /&amp;gt;&amp;lt;td&amp;gt;C&amp;lt;/td&amp;gt;&amp;lt;td /&amp;gt;&amp;lt;td /&amp;gt;&amp;lt;td&amp;gt;D&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/responseTable&amp;gt;&amp;lt;/responseSpec&amp;gt;&lt;/value&gt;
+                &lt;/response&gt;
+            &lt;/itemResponse&gt;
+            </Response>
+            <ScoreInfo maxScore="1" scoreDimension="overall" scorePoint="1" scoreStatus="Scored">
+                <ScoreRationale/>
+            </ScoreInfo>
+        </Item>
+        <!-- Sample Hot Text Interaction (HTQ) (from xls, no sample in TRTs) -->
+        <Item adminDate="2018-09-05T16:42:07.67-05:00" bankKey="10200" clientId="" dropped="0" format="IAT" isSelected="1"
+              key="92135" mimeType="text/xml" numberVisits="1" operational="1" pageNumber="2" pageTime="21100"
+              pageVisits="1" position="2" responseDuration="21100" score="1" scoreStatus="SCORED"
+              segmentId="(SBAC)SBAC-GEN-INTR-IAB-MA-NS-8-Winter-2018-2019">
+            <Response junit="htq" date="2018-09-05T16:42:48.843-05:00" key="dde221bd-1840-4da2-8e58-335ed79a22c7" type="">&lt;itemResponse&gt;
+                &lt;response id="hotTextInteraction_1.RESPONSE"&gt;&lt;value&gt;hotTextInteraction_1-hottext-2&lt;/value&gt;&lt;value&gt;hotTextInteraction_1-hottext-4&lt;/value&gt;
+                &lt;/response&gt;
+                &lt;/itemResponse&gt;
+            </Response>
+            <ScoreInfo maxScore="1" scoreDimension="overall" scorePoint="1" scoreStatus="Scored">
+                <ScoreRationale/>
+            </ScoreInfo>
+        </Item>
+        <!-- Sample Equation Interaction (EQ) (from xls, no sample in TRTs) -->
+        <Item adminDate="2018-09-05T16:42:07.67-05:00" bankKey="10200" clientId="" dropped="0" format="IAT" isSelected="1"
+              key="92135" mimeType="text/xml" numberVisits="1" operational="1" pageNumber="2" pageTime="21100"
+              pageVisits="1" position="2" responseDuration="21100" score="1" scoreStatus="SCORED"
+              segmentId="(SBAC)SBAC-GEN-INTR-IAB-MA-NS-8-Winter-2018-2019">
+            <Response junit="eq" date="2018-09-05T16:42:48.843-05:00" key="dde221bd-1840-4da2-8e58-335ed79a22c7" type="">&lt;itemResponse&gt;
+                &lt;response id="equationInteraction_1.CUSTOM"&gt;
+                &lt;value&gt;&amp;lt;response&amp;gt;&amp;lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="50"&amp;gt;&amp;lt;mstyle&amp;gt;&amp;lt;mn&amp;gt;50&amp;lt;/mn&amp;gt;&amp;lt;/mstyle&amp;gt;&amp;lt;/math&amp;gt;&amp;lt;/response&amp;gt;
+                &lt;/value&gt;
+            &lt;/response&gt;
+            &lt;/itemResponse&gt;</Response>
+            <ScoreInfo maxScore="1" scoreDimension="overall" scorePoint="1" scoreStatus="Scored">
+                <ScoreRationale/>
+            </ScoreInfo>
+        </Item>
+        <!-- Sample Grid Interaction (GI) (from xls, no sample in TRTs) -->
+        <Item adminDate="2018-09-05T16:42:07.67-05:00" bankKey="10200" clientId="" dropped="0" format="IAT" isSelected="1"
+              key="92135" mimeType="text/xml" numberVisits="1" operational="1" pageNumber="2" pageTime="21100"
+              pageVisits="1" position="2" responseDuration="21100" score="1" scoreStatus="SCORED"
+              segmentId="(SBAC)SBAC-GEN-INTR-IAB-MA-NS-8-Winter-2018-2019">
+            <Response junit="gi" date="2018-09-05T16:42:48.843-05:00" key="dde221bd-1840-4da2-8e58-335ed79a22c7" type="">&lt;itemResponse&gt;
+                &lt;response id="gridInteraction_1.CUSTOM"&gt;
+                &lt;value&gt;&amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;&amp;lt;AnswerSet&amp;gt;&amp;lt;Question id=""&amp;gt;&amp;lt;QuestionPart id="1"&amp;gt;&amp;lt;ObjectSet&amp;gt;&amp;lt;AtomicObject&amp;gt;{AminusB(91,49)}&amp;lt;/AtomicObject&amp;gt;&amp;lt;AtomicObject&amp;gt;{BC(193,49)}&amp;lt;/AtomicObject&amp;gt;&amp;lt;AtomicObject&amp;gt;{C(299,49)}&amp;lt;/AtomicObject&amp;gt;&amp;lt;RegionGroupObject name="PartA" numselected="1"&amp;gt;&amp;lt;RegionObject name="Step1" isselected="false" /&amp;gt;&amp;lt;RegionObject name="Step2" isselected="true" /&amp;gt;&amp;lt;RegionObject name="Step3" isselected="false" /&amp;gt;&amp;lt;RegionObject name="Step4" isselected="false" /&amp;gt;&amp;lt;/RegionGroupObject&amp;gt;&amp;lt;/ObjectSet&amp;gt;&amp;lt;SnapPoint&amp;gt;70@91,361;193,361;299,361;407,361;299,345;299,377&amp;lt;/SnapPoint&amp;gt;&amp;lt;/QuestionPart&amp;gt;&amp;lt;/Question&amp;gt;&amp;lt;/AnswerSet&amp;gt;&lt;/value&gt;
+            &lt;/response&gt;
+            &lt;/itemResponse&gt;</Response>
+            <ScoreInfo maxScore="1" scoreDimension="overall" scorePoint="1" scoreStatus="Scored">
+                <ScoreRationale/>
+            </ScoreInfo>
+        </Item>
+        <!-- Sample Writing Extended Response Interaction (WER) (from xls, no sample in TRTs) -->
+        <Item adminDate="2018-09-05T16:42:07.67-05:00" bankKey="10200" clientId="" dropped="0" format="IAT" isSelected="1"
+              key="92135" mimeType="text/xml" numberVisits="1" operational="1" pageNumber="2" pageTime="21100"
+              pageVisits="1" position="2" responseDuration="21100" score="1" scoreStatus="SCORED"
+              segmentId="(SBAC)SBAC-GEN-INTR-IAB-MA-NS-8-Winter-2018-2019">
+            <Response junit="wer" date="2018-09-05T16:42:48.843-05:00" key="dde221bd-1840-4da2-8e58-335ed79a22c7" type="">&lt;itemResponse&gt;
+                &lt;response id="textEntryInteraction_1.CUSTOM"&gt;
+                &lt;value&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;&amp;lt;u&amp;gt;&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; The Help of a Tablet &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;lt;/u&amp;gt;&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+
+                &amp;lt;p&amp;gt;&amp;nbsp; &amp;nbsp; My thesis of the help a tablet can provide is this, a tablet can help children with different learning styles, create a better learning environment, and introduce the children into a world of knowledge. Using the tablets can introduce the students into the biggest library of all. They can see, hear, and observe anything thing that they might be studying. Here is more information and in more detail.&amp;lt;/p&amp;gt;
+
+                &amp;lt;p&amp;gt;&amp;nbsp; &amp;nbsp; Children with different learning styles have a hard time in a classroom that they can&amp;#39;t see, hear or fully understand what their topic is about. It can be difficult for a child with a different learning style that is struggling to learn. mobile technology for a classroom is an interesting addition to a class. It not only provides a lot of knowledge but helps the children with different learning styles tremendously. A tablet can give a student the pictures that the might need that they didn&amp;#39;t have before, or students could listen to some video or audio on their topic.&amp;nbsp;&amp;lt;/p&amp;gt;
+
+                &amp;lt;p&amp;gt;&amp;nbsp; &amp;nbsp; A mobile technology device can introduce a new and improved learning environment for the students. Instead of the children getting bored with their teacher&amp;#39;s endless talking and gesturing, the children can now find the kind of informational form of their topic in a way that suites them the best. Yes, the teachers are still there, but now the student&amp;#39;s can have the best of both worlds with their teacher and their tablet.&amp;nbsp;&amp;lt;/p&amp;gt;
+
+                &amp;lt;p&amp;gt;&amp;nbsp; &amp;nbsp; Lastly, a mobile technology device has so much information on it. A child&amp;nbsp;can learn so much just by looking it up.&amp;lt;/p&amp;gt;
+
+                &amp;lt;p&amp;gt;If they were doing a project on the states they could have so much information at their finger tips that they would be an expert on their state if they researched just for a month when it would have taken way longer without the mobile devices. The students could have all of that information right there waiting for them. It is as if they had just walked into the biggest library on earth.&amp;lt;/p&amp;gt;
+
+                &amp;lt;p&amp;gt;&amp;nbsp; &amp;nbsp; The tablets will introduce so much knowledge and creativity for the students, and it&amp;#39;s all just waiting for them. The tablets help children with different learning styles, create a better learning environment, and introduce them into a world of knowledge. The tablets will be a wonderful addition to the school as well as the classrooms and will make learning fun, for everyone.&amp;lt;/p&amp;gt;
+
+                &amp;lt;p&amp;gt;&amp;nbsp;&amp;lt;/p&amp;gt;
+                &lt;/value&gt;
+                &lt;/response&gt;
+                &lt;/itemResponse&gt;</Response>
+            <ScoreInfo maxScore="1" scoreDimension="overall" scorePoint="1" scoreStatus="Scored">
+                <ScoreRationale/>
+            </ScoreInfo>
+        </Item>
+        <Item responseDuration="27" pageTime="0" pageNumber="7" pageVisits="0" numberVisits="2" format="MI" adminDate="2016-10-12T21:56:15.723" clientId=""
+              key="90323" bankKey="10200" position="7" contentLevel="1|S|TS07|L-4" strand="1" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1"
+              mimeType="text/plain" segmentId="(SBAC)SBAC-IAB-FIXED-G4M-G-MATH-4-Winter-2016-2017">
+            <Response date="2016-10-12T22:00:09.434" type="value"> &lt;itemResponse&gt;&lt;response id="RESPONSE"&gt;&lt;value&gt;1 b&lt;/value&gt;&lt;value&gt;1 c&lt;/value&gt;&lt;value&gt;2
+                a&lt;/value&gt;&lt;value&gt;2 c&lt;/value&gt;&lt;value&gt;3 a&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt; </Response>
+            <ScoreInfo scorePoint="1" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+                <ScoreRationale>
+                    <Message>
+                        successfully scored
+                    </Message>
+                </ScoreRationale>
+            </ScoreInfo>
+        </Item>
+        <Item responseDuration="24" pageTime="0" pageNumber="8" pageVisits="0" numberVisits="2" format="MI" adminDate="2016-10-12T21:56:22.726" clientId=""
+              key="89142" bankKey="10200" position="8" contentLevel="1|S|TS07|L-4" strand="1" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0"
+              mimeType="text/plain" segmentId="(SBAC)SBAC-IAB-FIXED-G4M-G-MATH-4-Winter-2016-2017">
+            <Response date="2016-10-12T22:00:07.272" type="value"> &lt;itemResponse&gt;&lt;response id="RESPONSE"&gt;&lt;value&gt;1 b&lt;/value&gt;&lt;value&gt;2 c&lt;/value&gt;&lt;value&gt;3
+                e&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt; </Response>
+            <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+                <ScoreRationale>
+                    <Message>
+                        successfully scored
+                    </Message>
+                </ScoreRationale>
+            </ScoreInfo>
+        </Item>
+        <Item responseDuration="49" pageTime="0" pageNumber="9" pageVisits="0" numberVisits="3" format="MI" adminDate="2016-10-12T21:56:44.024" clientId=""
+              key="82292" bankKey="10200" position="9" contentLevel="1|S|TS07|L-4" strand="1" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0"
+              mimeType="text/plain" segmentId="(SBAC)SBAC-IAB-FIXED-G4M-G-MATH-4-Winter-2016-2017">
+            <Response date="2016-10-12T22:00:06.739" type="value"> &lt;itemResponse&gt;&lt;response id="RESPONSE"&gt;&lt;value&gt;1 b&lt;/value&gt;&lt;value&gt;2 f&lt;/value&gt;&lt;value&gt;3
+                c&lt;/value&gt;&lt;value&gt;3 f&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt; </Response>
+            <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+                <ScoreRationale>
+                    <Message>
+                        successfully scored
+                    </Message>
+                </ScoreRationale>
+            </ScoreInfo>
+        </Item>
+        <Item responseDuration="56" pageTime="0" pageNumber="10" pageVisits="0" numberVisits="3" format="MI" adminDate="2016-10-12T21:57:09.309" clientId=""
+              key="82656" bankKey="10200" position="10" contentLevel="1|S|TS07|L-4" strand="1" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1"
+              mimeType="text/plain" segmentId="(SBAC)SBAC-IAB-FIXED-G4M-G-MATH-4-Winter-2016-2017">
+            <Response date="2016-10-12T22:00:06.173" type="value"> &lt;itemResponse&gt;&lt;response id="RESPONSE"&gt;&lt;value&gt;1 a&lt;/value&gt;&lt;value&gt;1 b&lt;/value&gt;&lt;value&gt;2
+                a&lt;/value&gt;&lt;value&gt;2 c&lt;/value&gt;&lt;value&gt;3 b&lt;/value&gt;&lt;value&gt;3
+                c&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt; </Response>
+            <ScoreInfo scorePoint="1" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+                <ScoreRationale>
+                    <Message>
+                        successfully scored
+                    </Message>
+                </ScoreRationale>
+            </ScoreInfo>
+        </Item>
+        <Item responseDuration="49" pageTime="0" pageNumber="11" pageVisits="0" numberVisits="2" format="MI" adminDate="2016-10-12T21:57:33.065" clientId=""
+              key="91720" bankKey="10200" position="11" contentLevel="1|S|TS07|L-4" strand="1" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0"
+              mimeType="text/plain" segmentId="(SBAC)SBAC-IAB-FIXED-G4M-G-MATH-4-Winter-2016-2017">
+            <Response date="2016-10-12T22:00:05.481" type="value"> &lt;itemResponse&gt;&lt;response id="RESPONSE"&gt;&lt;value&gt;1 b&lt;/value&gt;&lt;value&gt;2 b&lt;/value&gt;&lt;value&gt;3
+                a&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt; </Response>
+            <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+                <ScoreRationale>
+                    <Message>
+                        successfully scored
+                    </Message>
+                </ScoreRationale>
+            </ScoreInfo>
+        </Item>
+    </Opportunity>
+</TDSReport>

@@ -1,0 +1,32 @@
+#simulating the spring cloud config search path feature with "tenant_nv" profile for testing purposes
+tenantProperties:
+  tenants:
+    NVX:
+      id: NV
+      key: NVX #To verify id and key need not match
+      name: Nevada
+      description: Some Descriptive Text For NV
+      sandboxDataset: "test-dataset"
+      sandbox: true
+
+spring:
+  datasource:
+    tenants:
+      NVX:
+        url-parts:
+          database: "tenant_nv"
+        username: "tenant_nv_user"
+        password: "tenant_nv_password"
+
+archive:
+  tenants:
+    NVX:
+      uri-root: "file://tmp"
+      path-prefix: "/nv"
+
+taskSendReconciliationReport:
+  tenants:
+    NVX:
+      log: true
+      archives:
+        - uri-root: file:///tmp/

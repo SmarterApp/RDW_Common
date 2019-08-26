@@ -1,8 +1,17 @@
+configurations {
+    testCompile.extendsFrom compileOnly
+}
+
 dependencies {
     compile 'com.google.guava:guava'
     compile 'org.springframework:spring-core'
     compile 'org.springframework.cloud:spring-cloud-starter-aws'
-
+    compile 'org.springframework:spring-context'
+    compile project(':rdw-common-multi-tenant')
+    
     testCompile 'org.springframework:spring-test'
-    testRuntime 'org.springframework.boot:spring-boot-starter-test'
+    testCompile 'org.springframework.boot:spring-boot-starter'
+    testCompile('org.springframework.boot:spring-boot-starter-test') {
+        exclude(module: 'commons-logging')
+    }
 }

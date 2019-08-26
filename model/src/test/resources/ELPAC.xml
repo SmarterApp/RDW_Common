@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Subject code="ELPAC" name="ELPAC">
+  <Messages>
+    <Message key="standard-description"><![CDATA[This column reflects the Common Core State Standard(s) associated with a test item. Test items may be associated with more than one standard. For more information, see (TBD).]]></Message>
+    <Message key="sum.performance-info"><![CDATA[Student scores on the Summative ELPAC are assigned to one of four achievement levels (Minimally, Somewhat, Moderately, and Well Developed) based on the scale score.]]></Message>
+  </Messages>
+  <AssessmentTypes>
+    <AssessmentType code="sum" name="Summative" longName="Summative ELPAC" targetReport="false" printedReport="false">
+      <OverallScoring name="Overall" minScore="1150" maxScore="1950">
+        <PerformanceLevels standardCutoff="4">
+          <PerformanceLevel level="1" name="Level 1" shortName="Level 1" suffix="" color="maroon"/>
+          <PerformanceLevel level="2" name="Level 2" shortName="Level 2" suffix="" color="orange"/>
+          <PerformanceLevel level="3" name="Level 3" shortName="Level 3" suffix="" color="blue"/>
+          <PerformanceLevel level="4" name="Level 4" shortName="Level 4" suffix="" color="green"/>
+        </PerformanceLevels>
+      </OverallScoring>
+      <AltScoring name="Composite" minScore="1150" maxScore="1950">
+        <PerformanceLevels>
+          <PerformanceLevel level="1" name="Level 1" shortName="Level 1" suffix="" color="maroon"/>
+          <PerformanceLevel level="2" name="Level 2" shortName="Level 2" suffix="" color="orange"/>
+          <PerformanceLevel level="3" name="Level 3" shortName="Level 3" suffix="" color="blue"/>
+          <PerformanceLevel level="4" name="Level 4" shortName="Level 4" suffix="" color="green"/>
+        </PerformanceLevels>
+      </AltScoring>
+      <ClaimScoring name="Domain">
+        <PerformanceLevels>
+          <PerformanceLevel level="1" name="Minimally Developed" shortName="Beginning" suffix="" color="red"/>
+          <PerformanceLevel level="2" name="Somewhat/Moderately Developed" shortName="Moderately" suffix="" color="orange"/>
+          <PerformanceLevel level="3" name="Well Developed" shortName="Well Developed" suffix="" color="green"/>
+        </PerformanceLevels>
+      </ClaimScoring>
+    </AssessmentType>
+  </AssessmentTypes>
+  <AltScores>
+    <AltScore code="1" name="Oral" displayOrder="1">
+      <Icon>fa-lightbulb-o</Icon>
+      <Description>Oral Language - TBD.</Description>
+    </AltScore>
+    <AltScore code="2" name="Written" displayOrder="2">
+      <Icon>fa-book</Icon>
+      <Description>Written Language - TBD.</Description>
+    </AltScore>
+  </AltScores>
+  <Claims>
+    <Claim code="1-L" name="Listening" displayOrder="1">
+      <Icon>fa-lightbulb-o</Icon>
+      <Description>Oral Language, Listening - TBD.</Description>
+    </Claim>
+    <Claim code="1-S" name="Speaking" displayOrder="2">
+      <Icon>fa-lightbulb-o</Icon>
+      <Description>Oral Language, Speaking - TBD.</Description>
+    </Claim>
+    <Claim code="2-R" name="Reading" displayOrder="3">
+      <Icon>fa-book</Icon>
+      <Description>Written Language, Reading - TBD.</Description>
+    </Claim>
+    <Claim code="2-W" name="Writing" displayOrder="4">
+      <Icon>fa-book</Icon>
+      <Description>Written Language, Writing - TBD.</Description>
+    </Claim>
+  </Claims>
+</Subject>

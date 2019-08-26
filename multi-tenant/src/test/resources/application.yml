@@ -1,0 +1,79 @@
+#not actually testing database access using for testing org.opentestsystem.rdw.multitenant.datasource.DataSourceElementsTenant
+logging:
+  level:
+    org.springframework: DEBUG
+    org.opentestsystem.rdw.multitenant: DEBUG
+
+spring:
+  datasource:
+    url-parts:
+      #This is the generic format of the connection URL protocol//[hosts][/database][?properties]
+      protocol: "jdbc:mysql:"
+      hosts: "${spring.datasource.url-server:localhost:3306}"
+      database: "${spring.datasource.url-schema:reporting}"
+      properties: "useSSL=${spring.datasource.use-ssl:false}\
+                   &useLegacyDatetimeCode=${spring.datasource.use-legacy-datetime-code:false}\
+                   &characterEncoding=${spring.datasource.character-encoding:utf8}\
+                   &rewriteBatchedStatements=${spring.datasource.rewrite-batched-statements:true}\
+                   &connectTimeout=${spring.datasource.connect-timeout:10000}\
+                   &socketTimeout=${spring.datasource.socket-timeout:40000}\
+                   "
+    url: "${spring.datasource.url-parts.protocol}//${spring.datasource.url-parts.hosts}/${spring.datasource.url-parts.database}?${spring.datasource.url-parts.properties}"
+    username: root
+    password:
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    validationInterval: 35000
+    driverClassName: com.mysql.jdbc.Driver
+    initialize: false
+    initialSize: 4
+    maxActive: 10
+    minIdle: ${spring.datasource.initialSize}
+    maxIdle: ${spring.datasource.maxActive}
+    removeAbandoned: false
+    removeAbandonedTimeout: 60
+    logAbandoned: false
+#not actually testing s3/file access using for testing resolver
+archive:
+  #uri-root: (testing null at root)
+  #path-prefix (testing null at root)
+  s3-access-key: testkey
+  s3-secret-key: testsecret
+  s3-region-static: us-west-2
+  s3-sse: testsse
+
+validation:
+  requiredDataElements:
+    - FirstName
+    - LastOrSurname
+    - Birthdate
+    - Sex
+    - EconomicDisadvantageStatus
+    - IDEAIndicator
+    - Completeness
+    - AdministrationCondition
+
+taskUpdateOrganizationsArtClient:
+  groups-of-districts-url: https://art-deployment.sbtds.org/rest/groupofdistrict?stateAbbreviation={state}&pageSize=1000
+  districts-url: https://art-deployment.sbtds.org/rest/district?stateAbbreviation={state}&pageSize=5000
+  groups-of-schools-url: https://art-deployment.sbtds.org/rest/groupofinstitution?stateAbbreviation={state}&pageSize=1000
+  schools-url:
+  status-url: https://art-deployment.sbtds.org/rest/status
+  oauth2:
+    access-token-uri: https://sso-deployment.sbtds.org:443/auth/oauth2/access_token?realm=/sbac
+    client-id: sbacdw
+    client-secret:
+    username: prime.user@example.com
+    password:
+
+taskUpdateOrganizationsImportServiceClient:
+  organizations-imports-url: http://localhost:8080/organizations/imports
+  status-url: http://localhost:8081/status
+  oauth2:
+    access-token-uri: https://sso-deployment.sbtds.org:443/auth/oauth2/access_token?realm=/sbac
+    client-id: sbacdw
+    client-secret:
+
+taskSendReconciliationReport:
+  query: DEFAULT QUERY
+  log: false

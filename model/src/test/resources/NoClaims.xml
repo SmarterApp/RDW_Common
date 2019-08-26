@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Subject code="ELPAC" name="ELPAC">
+  <Messages>
+    <Message key="sum.performance-info"><![CDATA[Student scores on the Summative ELPAC are assigned to one of four achievement levels (Minimally, Somewhat, Moderately, and Well Developed) based on the scale score.]]></Message>
+  </Messages>
+  <AssessmentTypes>
+    <AssessmentType code="sum" name="Summative" longName="Summative ELPAC" targetReport="false" printedReport="false">
+      <OverallScoring name="Overall" minScore="1150" maxScore="1950">
+        <PerformanceLevels>
+          <PerformanceLevel level="1" name="Level 1" shortName="Level 1" suffix="" color="maroon"/>
+          <PerformanceLevel level="2" name="Level 2" shortName="Level 2" suffix="" color="orange"/>
+          <PerformanceLevel level="3" name="Level 3" shortName="Level 3" suffix="" color="blue"/>
+          <PerformanceLevel level="4" name="Level 4" shortName="Level 4" suffix="" color="green"/>
+        </PerformanceLevels>
+      </OverallScoring>
+      <AltScoring name="Composite" minScore="1150" maxScore="1950">
+        <PerformanceLevels>
+          <PerformanceLevel level="1" name="Level 1" shortName="Level 1" suffix="" color="maroon"/>
+          <PerformanceLevel level="2" name="Level 2" shortName="Level 2" suffix="" color="orange"/>
+          <PerformanceLevel level="3" name="Level 3" shortName="Level 3" suffix="" color="blue"/>
+          <PerformanceLevel level="4" name="Level 4" shortName="Level 4" suffix="" color="green"/>
+        </PerformanceLevels>
+      </AltScoring>
+    </AssessmentType>
+  </AssessmentTypes>
+  <AltScores>
+    <AltScore code="1" name="Oral" displayOrder="1">
+      <Icon>fa-lightbulb-o</Icon>
+      <Description>Oral Language - TBD.</Description>
+    </AltScore>
+    <AltScore code="2" name="Written" displayOrder="2">
+      <Icon>fa-book</Icon>
+      <Description>Written Language - TBD.</Description>
+    </AltScore>
+  </AltScores>
+</Subject>

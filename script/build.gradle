@@ -1,0 +1,33 @@
+ext['groovy.version'] = '2.5.6'
+
+// This pulls in the dependency management which is great.
+// But it also defines silly boot tasks which we don't want here.
+apply plugin: 'org.springframework.boot'
+bootRepackage.enabled = false
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'commons-io:commons-io'
+    compile 'jaxen:jaxen:1.1.4'
+    compile 'net.sf.saxon:Saxon-HE:9.7.0-21'
+    compile 'org.codehaus.groovy:groovy:2.5.6'
+    compile 'org.jdom:jdom2:2.0.6'
+    compile 'org.apache.commons:commons-lang3'
+
+    // fixes java 8 time marshaling
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+
+    // for @NotNull
+    compile 'javax.validation:validation-api'
+
+    compile project(':rdw-common-archive')
+    compile project(':rdw-common-utils')
+    compile project(':rdw-common-model')
+
+    testCompile 'org.xmlunit:xmlunit-core:2.6.2'
+    testCompile 'org.xmlunit:xmlunit-matchers:2.6.2'
+}
+

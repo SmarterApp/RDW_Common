@@ -2,15 +2,20 @@
 RDW modules used by at least two apps.
 
 Additional documentation:
-1. RDW_Common is part of the RDW suite of projects and applications. For all things RDW please refer to 
-[RDW repo](https://github.com/SmarterApp/RDW)
-1. [License](LICENSE)
+* RDW_Common is part of the RDW suite of projects and applications. 
+For all things RDW please refer to [RDW repo](https://github.com/SmarterApp/RDW)
+* [License](LICENSE)
+* There are jdbc integration tests. The [RDW Schema](https://github.com/SmarterApp/RDW_Schema) 
+project has instructions for setting up MySQL locally to run these tests.  
 
-#### Building Modules
+#### Building
 Java 8.
+MySQL (see note above about RDW Schema project).
 
 This is a gradle project so you can use the gradle wrapper `./gradlew clean build` or 
-local gradle (v3.3+) `gradle clean build`.
+local gradle (v3.3+) `gradle clean build`. It is highly recommended to install gdub
+(https://github.com/dougborg/gdub) because it handles some shortcomings of
+gradle's commandline behavior.
 
 Resulting module jars can be found in `./build/libs`
 

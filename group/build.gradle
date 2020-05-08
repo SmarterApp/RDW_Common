@@ -1,19 +1,22 @@
 dependencies {
-    compile project(':rdw-common-security')
+    implementation project(':rdw-common-security')
 
-    compile 'commons-io:commons-io'
-    compile 'org.apache.commons:commons-csv'
-    compile 'org.apache.commons:commons-lang3'
-    compile 'org.apache.commons:commons-text'
+    implementation 'commons-io:commons-io'
+    implementation 'com.google.guava:guava'
+    implementation 'javax.validation:validation-api' // for @NotNull, etc.
+    implementation 'org.apache.commons:commons-csv'
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'org.apache.commons:commons-text'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
     testCompile('org.springframework.boot:spring-boot-starter-test') {
         exclude(module: 'commons-logging')
     }
     // for YamlPropertiesConfigurator
-    testCompile project(':rdw-common-utils')
+    testImplementation project(':rdw-common-utils')
 
     // for mysql driver
     // IT test complained about not having this
-    testCompile 'org.hibernate:hibernate-validator:5.4.1.Final'
-    testCompile 'mysql:mysql-connector-java'
+    testImplementation 'org.hibernate:hibernate-validator:5.4.1.Final'
+    testImplementation 'mysql:mysql-connector-java'
 }

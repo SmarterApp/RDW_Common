@@ -1,11 +1,11 @@
 dependencies {
-    compile project(':rdw-common-multi-tenant')
+    implementation project(':rdw-common-multi-tenant')
 
-    compile 'com.google.guava:guava'
+    implementation 'com.google.guava:guava'
 
     // For StatusMvcEndpoint
-    compile 'org.springframework.boot:spring-boot-starter-actuator'
-    compile 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    testCompile 'org.springframework:spring-test'
+    testImplementation 'org.springframework:spring-test'
 }

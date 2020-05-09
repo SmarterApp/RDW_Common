@@ -14,7 +14,7 @@ allprojects {
     group = 'org.opentestsystem.rdw.common'
 
     if (project.hasProperty('buildNumber')) {
-      project.setVersion(project.version.toString().replaceAll('SNAPSHOT', '${buildNumber}'))
+      project.setVersion(project.version.toString().replaceAll("SNAPSHOT", "${buildNumber}"))
     }
 }
 
@@ -110,14 +110,15 @@ subprojects {
 
   publishing.publications {
     mavenJava(MavenPublication) {
-      from components.java
+      artifact jar
       artifact sourcesJar
+      artifact javadocJar
+
     }
   }
 }
 
-// skip publishing the root module
-// TODO - is this really necessary, the plugin isn't applied at the root level?
+// skip publishing task for the root module
 artifactoryPublish.skip = true
 
 artifactory {

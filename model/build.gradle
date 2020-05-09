@@ -1,17 +1,17 @@
 import org.gradle.internal.jvm.Jvm
 
 dependencies {
-    compile 'com.fasterxml.jackson.core:jackson-annotations'
-    compile 'com.fasterxml.jackson.core:jackson-databind'
-    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
-    compile 'com.fasterxml.jackson.datatype:jackson-datatype-guava'
-    compile 'commons-io:commons-io'
-    compile 'org.apache.commons:commons-csv'
-    compile 'org.apache.commons:commons-lang3'
-    compile 'org.codehaus.woodstox:stax2-api'
-    compile 'msv:msv'
-    compile 'msv:xsdlib'
-    compile 'xerces:xercesImpl'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations'
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-guava'
+    implementation 'commons-io:commons-io'
+    implementation 'org.apache.commons:commons-csv'
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'org.codehaus.woodstox:stax2-api'
+    implementation 'msv:msv'
+    implementation 'msv:xsdlib'
+    implementation 'xerces:xercesImpl'
 
     runtime files(Jvm.current().toolsJar)
 }

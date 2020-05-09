@@ -1,33 +1,26 @@
 ext['groovy.version'] = '2.5.6'
 
-// This pulls in the dependency management which is great.
-// But it also defines silly boot tasks which we don't want here.
-apply plugin: 'org.springframework.boot'
-bootRepackage.enabled = false
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    compile 'commons-io:commons-io'
-    compile 'jaxen:jaxen:1.1.4'
-    compile 'net.sf.saxon:Saxon-HE:9.7.0-21'
-    compile 'org.codehaus.groovy:groovy:2.5.6'
-    compile 'org.jdom:jdom2:2.0.6'
-    compile 'org.apache.commons:commons-lang3'
+    implementation 'com.google.guava:guava'
+    implementation 'commons-io:commons-io'
+    implementation 'jaxen:jaxen:1.1.4'
+    implementation 'net.sf.saxon:Saxon-HE:9.7.0-21'
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'org.codehaus.groovy:groovy:2.5.6'
+    implementation 'org.jdom:jdom2:2.0.6'
+    implementation 'org.springframework:spring-context'
 
     // fixes java 8 time marshaling
-    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
 
     // for @NotNull
-    compile 'javax.validation:validation-api'
+    implementation 'javax.validation:validation-api'
 
-    compile project(':rdw-common-archive')
-    compile project(':rdw-common-utils')
-    compile project(':rdw-common-model')
+    implementation project(':rdw-common-archive')
+    implementation project(':rdw-common-utils')
+    implementation project(':rdw-common-model')
 
-    testCompile 'org.xmlunit:xmlunit-core:2.6.2'
-    testCompile 'org.xmlunit:xmlunit-matchers:2.6.2'
+    testImplementation 'org.xmlunit:xmlunit-core:2.6.2'
+    testImplementation 'org.xmlunit:xmlunit-matchers:2.6.2'
 }
 

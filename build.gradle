@@ -1,32 +1,28 @@
-buildscript {
-  repositories {
-    mavenLocal()
-    jcenter()
-  }
-  dependencies {
-    classpath("io.spring.gradle:dependency-management-plugin:1.0.6.RELEASE")
-    classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.18.RELEASE")
+plugins {
+  id 'idea'
+  id 'com.jfrog.artifactory' version '4.11.0'
+}
+
+idea {
+  module {
+    downloadJavadoc = true
+    downloadSources = true
   }
 }
 
-apply plugin: 'io.spring.dependency-management'
-
 allprojects {
     group = 'org.opentestsystem.rdw.common'
-    version = '2.4.0-SNAPSHOT'
 
-    apply plugin: 'idea'
-
-    if (project.hasProperty("buildNumber")) {
-      project.setVersion(project.version.toString().replaceAll("SNAPSHOT", "${buildNumber}"))
+    if (project.hasProperty('buildNumber')) {
+      project.setVersion(project.version.toString().replaceAll('SNAPSHOT', '${buildNumber}'))
     }
 }
 
 subprojects {
-  apply plugin: "java"
-  apply plugin: "maven"
-  apply plugin: "jacoco"
-  apply plugin: 'io.spring.dependency-management'
+  apply plugin: 'java'
+  apply plugin: 'maven-publish'
+  apply plugin: 'jacoco'
+  apply plugin: 'com.jfrog.artifactory'
 
   sourceCompatibility = 1.8
   targetCompatibility = 1.8
@@ -35,62 +31,69 @@ subprojects {
       mavenCentral()
   }
 
-  dependencyManagement {
-    dependencies {
-      // commonly used libraries
-      dependency 'com.google.code.gson:gson:2.8.5'
-      dependency 'com.google.guava:guava:27.0.1-jre'
-      dependency 'commons-io:commons-io:2.6'
-      dependency 'org.apache.commons:commons-csv:1.6'
-      dependency 'org.apache.commons:commons-lang3:3.8.1'
-      dependency 'org.apache.commons:commons-text:1.6'
-      dependency 'org.slf4j:slf4j-api:1.7.25'
-
-      // commonly used test libraries
-      dependency 'junit:junit:4.12'
-      dependency 'org.assertj:assertj-core:3.11.1'
-      dependency 'org.mockito:mockito-core:2.23.4'
-      dependency 'org.mockito:mockito-inline:2.23.4'
-
-      // jackson
-      dependency 'com.fasterxml.jackson.core:jackson-annotations:2.9.9'
-      dependency 'com.fasterxml.jackson.core:jackson-core:2.9.9'
-      dependency 'com.fasterxml.jackson.core:jackson-databind:2.9.9.1'
-      dependency 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.9'
-      dependency 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.9'
-      dependency 'com.fasterxml.jackson.datatype:jackson-datatype-guava:2.9.9'
-
-      // Woodstox STAX2 XML stream processing API and required
-      // Sun Multi-Schema Validation libraries
-      dependency 'org.codehaus.woodstox:stax2-api:4.1'
-      dependency 'msv:msv:20050913'
-      dependency 'msv:xsdlib:20050913'
-      dependency 'xerces:xercesImpl:2.11.0'
-    }
-    imports {
-      // make springframework versions consistent with other projects in the RDW suite
-      mavenBom 'org.springframework.boot:spring-boot-dependencies:1.5.18.RELEASE'
-      mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Edgware.SR5'
-    }
-  }
-
   dependencies {
-    compile 'org.slf4j:slf4j-api'
+    // For any library brought in by spring-boot-dependencies, if we want a
+    // different version, this is how to set it. You can see the options in
+    // https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-dependencies/1.5.21.RELEASE/spring-boot-dependencies-1.5.21.RELEASE.pom
+    rootProject.ext['assertj.version'] = '3.14.0' // 3.11.1
+    rootProject.ext['mockito.version'] = '2.28.2' // 2.23.4
 
-    testCompile 'junit:junit'
-    testCompile 'org.mockito:mockito-core'
-    testCompile 'org.assertj:assertj-core'
+    constraints {
+        // commonly used libraries
+        implementation 'com.google.code.gson:gson:2.8.5'
+        implementation 'com.google.guava:guava:27.0.1-jre'
+        implementation 'commons-io:commons-io:2.6'
+        implementation 'org.apache.commons:commons-csv:1.6'
+        implementation 'org.apache.commons:commons-lang3:3.8.1'
+        implementation 'org.apache.commons:commons-text:1.6'
+        implementation 'org.slf4j:slf4j-api:1.7.25'
+
+        // commonly used test libraries
+        implementation 'junit:junit:4.12'
+        implementation "org.assertj:assertj-core:${rootProject.ext['assertj.version']}"
+        implementation "org.mockito:mockito-core:${rootProject.ext['mockito.version']}"
+        implementation "org.mockito:mockito-inline:${rootProject.ext['mockito.version']}"
+
+        // jackson
+        implementation 'com.fasterxml.jackson.core:jackson-annotations:2.9.9'
+        implementation 'com.fasterxml.jackson.core:jackson-core:2.9.9'
+        implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.9.1'
+        implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.9'
+        implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.9'
+        implementation 'com.fasterxml.jackson.datatype:jackson-datatype-guava:2.9.9'
+
+        // Woodstox STAX2 XML stream processing API and required
+        // Sun Multi-Schema Validation libraries
+        implementation 'org.codehaus.woodstox:stax2-api:4.1'
+        implementation 'msv:msv:20050913'
+        implementation 'msv:xsdlib:20050913'
+        implementation 'xerces:xercesImpl:2.11.0'
+    }
+
+    implementation platform('org.springframework.boot:spring-boot-dependencies:1.5.21.RELEASE')
+    implementation platform('org.springframework.cloud:spring-cloud-dependencies:Dalston.RELEASE')
+
+    // handy for creating metadata with @ConfigurationProperties
+    compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
+
+    implementation 'org.slf4j:slf4j-api'
+
+    testImplementation 'junit:junit'
+    testImplementation 'org.mockito:mockito-core'
+    testImplementation 'org.assertj:assertj-core'
   }
 
-  test.finalizedBy jacocoTestReport
+  test {
+    finalizedBy jacocoTestReport
+  }
 
   task sourcesJar(type: Jar, dependsOn: classes) {
-    classifier = 'sources'
-    from sourceSets.main.allSource
+    archiveClassifier.set('sources')
+    from sourceSets.main.allJava
   }
 
   task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
+    archiveClassifier.set('javadoc')
     from javadoc.destinationDir
   }
 
@@ -98,6 +101,44 @@ subprojects {
     archives sourcesJar
     archives javadocJar
   }
-}
-  
 
+  // 'install' task for installing (publishing) to local .m2
+  task install(dependsOn: [build, publishToMavenLocal])
+
+  // make sure publishing does a build first
+  tasks.artifactoryPublish.dependsOn 'build'
+
+  publishing.publications {
+    mavenJava(MavenPublication) {
+      from components.java
+      artifact sourcesJar
+    }
+  }
+}
+
+// skip publishing the root module
+// TODO - is this really necessary, the plugin isn't applied at the root level?
+artifactoryPublish.skip = true
+
+artifactory {
+  contextUrl = 'https://artifactory.smarterbalanced.org/artifactory/'
+
+  publish {
+    repository {
+      repoKey  = project.version.contains('-SNAPSHOT') ? 'libs-snapshots-local' : 'libs-releases-local'
+      username = project.artifactoryUser
+      password = project.artifactoryPassword
+      maven = true
+    }
+    defaults {
+      publications ('mavenJava')
+    }
+  }
+
+  resolve {
+    repository {
+      repoKey = 'libs-releases'
+      maven = true
+    }
+  }
+}

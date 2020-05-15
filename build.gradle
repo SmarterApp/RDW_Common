@@ -36,8 +36,10 @@ subprojects {
         // different version, this is how to set it. You can see the options in
         // https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-dependencies/1.5.21.RELEASE/spring-boot-dependencies-1.5.21.RELEASE.pom
         rootProject.ext['assertj.version'] = '3.14.0'
-        rootProject.ext['mockito.version'] = '2.28.2'
+        rootProject.ext['groovy.version'] = '2.5.6'
         rootProject.ext['jackson.version'] = '2.9.9'
+        rootProject.ext['mockito.version'] = '2.28.2'
+        rootProject.ext['mysql.version'] = '5.1.46' // 5.1.47 causes problems (mostly in RDW_Reporting)
 
         constraints {
             // commonly used libraries
@@ -47,13 +49,8 @@ subprojects {
             implementation 'org.apache.commons:commons-csv:1.6'
             implementation 'org.apache.commons:commons-lang3:3.8.1'
             implementation 'org.apache.commons:commons-text:1.6'
-            implementation 'org.slf4j:slf4j-api:1.7.25'
-
-            // commonly used test libraries
-            implementation 'junit:junit:4.12'
-            implementation "org.assertj:assertj-core:${rootProject.ext['assertj.version']}"
-            implementation "org.mockito:mockito-core:${rootProject.ext['mockito.version']}"
-            implementation "org.mockito:mockito-inline:${rootProject.ext['mockito.version']}"
+            implementation "org.codehaus.groovy:groovy:${rootProject.ext['groovy.version']}"
+            implementation 'org.slf4j:slf4j-api:1.7.26'
 
             // jackson
             implementation "com.fasterxml.jackson.core:jackson-annotations:${rootProject.ext['jackson.version']}"
@@ -69,6 +66,12 @@ subprojects {
             implementation 'msv:msv:20050913'
             implementation 'msv:xsdlib:20050913'
             implementation 'xerces:xercesImpl:2.11.0'
+
+            // commonly used test libraries
+            testImplementation 'junit:junit:4.12'
+            testImplementation "org.assertj:assertj-core:${rootProject.ext['assertj.version']}"
+            testImplementation "org.mockito:mockito-core:${rootProject.ext['mockito.version']}"
+            testImplementation "org.mockito:mockito-inline:${rootProject.ext['mockito.version']}"
         }
 
         implementation platform('org.springframework.boot:spring-boot-dependencies:1.5.21.RELEASE')

@@ -91,22 +91,12 @@ subprojects {
         finalizedBy jacocoTestReport
     }
 
-    task sourcesJar(type: Jar, dependsOn: classes) {
-        archiveClassifier.set('sources')
-        from sourceSets.main.allJava
+    java {
+        withJavadocJar()
+        withSourcesJar()
     }
 
-    task javadocJar(type: Jar, dependsOn: javadoc) {
-        archiveClassifier.set('javadoc')
-        from javadoc.destinationDir
-    }
-
-    artifacts {
-        archives sourcesJar
-        archives javadocJar
-    }
-
-    // 'install' task for installing (publishing) to local .m2
+    // 'install' task alias for installing (publishing) to local .m2
     task install(dependsOn: [build, publishToMavenLocal])
 
     // make sure publishing does a build first
@@ -114,9 +104,7 @@ subprojects {
 
     publishing.publications {
         mavenJava(MavenPublication) {
-            artifact jar
-            artifact sourcesJar
-            artifact javadocJar
+            from components.java
         }
     }
 }

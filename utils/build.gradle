@@ -2,12 +2,13 @@ dependencies {
     implementation 'com.google.code.gson:gson'
     implementation 'com.google.guava:guava'
     implementation 'org.springframework:spring-context'
-    testImplementation 'org.springframework:spring-test'
-    testRuntime 'org.yaml:snakeyaml:1.26'
 
     // for @NotNull
     implementation 'javax.validation:validation-api'
 
     // fixes java 8 time marshaling
     implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+
+    testImplementation 'org.springframework:spring-test'
+    testRuntime 'org.yaml:snakeyaml:1.26'
 }

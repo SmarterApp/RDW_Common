@@ -14,6 +14,7 @@
         <xs:element ref="ItemDifficulties" minOccurs="0"/>
         <xs:element ref="ReportGrades" minOccurs="0"/>
         <xs:element ref="AltScores" minOccurs="0"/>
+        <xs:element ref="Traits" minOccurs="0"/>
         <xs:element ref="Claims" minOccurs="0"/>
         <xs:element ref="Standards" minOccurs="0"/>
       </xs:sequence>
@@ -97,6 +98,12 @@
         assessment type should be enabled.
       -->
       <xs:attribute name="printedReport" default="true" type="xs:boolean"/>
+      <!--
+        This is an optional flag that controls whether exam-level trait data will be
+        displayed for this subject assessment type. Setting this true should correspond
+        to defining trait codes, and providing exam-level trait scores.
+      -->
+      <xs:attribute name="traitReport" default="false" type="xs:boolean"/>
     </xs:complexType>
   </xs:element>
 
@@ -327,6 +334,27 @@
       <xs:sequence>
         <xs:element name="AltScore" type="Scorable" maxOccurs="unbounded"/>
       </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!--
+    Trait elements define the (optional) trait codes for the subject.
+    These are used to identify and store trait scores at the exam level.
+  -->
+  <xs:element name="Traits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Trait" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Trait">
+    <xs:complexType>
+      <!-- the code is used in the measureOf in the TRT -->
+      <xs:attribute name="code" use="required"/>
+      <!-- the purpose/category are used to group results in reports -->
+      <xs:attribute name="purpose" use="required" type="String10"/>
+      <xs:attribute name="category" use="required" type="String10"/>
     </xs:complexType>
   </xs:element>
 

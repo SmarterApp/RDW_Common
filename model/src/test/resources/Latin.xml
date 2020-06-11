@@ -4,7 +4,7 @@
     <Message key="sum.performance-info"><![CDATA[Student scores on the Latin Proficiency assessments are assigned to one of four achievement levels based on the scale score.]]></Message>
   </Messages>
   <AssessmentTypes>
-    <AssessmentType code="sum" name="Latin " longName="Summative Assessment" targetReport="false" printedReport="true">
+    <AssessmentType code="sum" name="Latin " longName="Summative Assessment" targetReport="false" printedReport="true" traitReport="true">
       <OverallScoring name="Overall - General" minScore="1150" maxScore="1950">
         <PerformanceLevels standardCutoff="3">
           <PerformanceLevel level="1" name="Level 1" shortName="Level 1" color="maroon"/>
@@ -89,6 +89,13 @@
       </ReportAssessmentTypes>
     </ReportGrade>
   </ReportGrades>
+  <Traits>
+    <Trait code="LAT_VOCAB_VERBS" purpose="VOCAB" category="VERBS"/>
+    <Trait code="LAT_VOCAB_NOUNS" purpose="VOCAB" category="NOUNS"/>
+    <Trait code="LAT_GRAM_CONJ" purpose="GRAM" category="CONJ"/>
+    <Trait code="LAT_GRAM_ORDER" purpose="GRAM" category="ORDER"/>
+    <Trait code="LAT_GRAM_PUNC" purpose="GRAM" category="PUNC"/>
+  </Traits>
   <Claims>
     <Claim code="LAT_T" name="Translation" displayOrder=" 1" scorable="true" organizational="false">
       <Icon>fa-language</Icon>

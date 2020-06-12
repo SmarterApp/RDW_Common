@@ -355,6 +355,8 @@
       <!-- the purpose/category are used to group results in reports -->
       <xs:attribute name="purpose" use="required" type="String10"/>
       <xs:attribute name="category" use="required" type="String10"/>
+      <!-- max score is used to validate data, and to constrain the report table -->
+      <xs:attribute name="maxScore" use="required" type="xs:int"/>
     </xs:complexType>
   </xs:element>
 

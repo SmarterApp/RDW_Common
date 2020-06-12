@@ -90,22 +90,22 @@
     </ReportGrade>
   </ReportGrades>
   <Traits>
-    <Trait code="LAT_VOCAB_VERBS" purpose="VOCAB" category="VERBS"/>
-    <Trait code="LAT_VOCAB_NOUNS" purpose="VOCAB" category="NOUNS"/>
-    <Trait code="LAT_GRAM_CONJ" purpose="GRAM" category="CONJ"/>
-    <Trait code="LAT_GRAM_ORDER" purpose="GRAM" category="ORDER"/>
-    <Trait code="LAT_GRAM_PUNC" purpose="GRAM" category="PUNC"/>
+    <Trait code="LAT_VOCAB_VERBS" purpose="VOCAB" category="VERBS" maxScore="5"/>
+    <Trait code="LAT_VOCAB_NOUNS" purpose="VOCAB" category="NOUNS" maxScore="5"/>
+    <Trait code="LAT_GRAM_CONJ" purpose="GRAM" category="CONJ" maxScore="4"/>
+    <Trait code="LAT_GRAM_ORDER" purpose="GRAM" category="ORDER" maxScore="2"/>
+    <Trait code="LAT_GRAM_PUNC" purpose="GRAM" category="PUNC" maxScore="2"/>
   </Traits>
   <Claims>
-    <Claim code="LAT_T" name="Translation" displayOrder=" 1" scorable="true" organizational="false">
+    <Claim code="LAT_T" name="Translation" displayOrder="1" scorable="true" organizational="false">
       <Icon>fa-language</Icon>
       <Description>Translation</Description>
     </Claim>
-    <Claim code="LAT_G" name="Grammer and Syntax" displayOrder=" 2" scorable="true" organizational="false">
+    <Claim code="LAT_G" name="Grammer and Syntax" displayOrder="2" scorable="true" organizational="false">
       <Icon>fa-pen</Icon>
       <Description>Grammer and Syntax</Description>
     </Claim>
-    <Claim code="LAT_R" name="Reading Comprehension" displayOrder=" 3" scorable="true" organizational="false">
+    <Claim code="LAT_R" name="Reading Comprehension" displayOrder="3" scorable="true" organizational="false">
       <Icon>fa-book</Icon>
       <Description>Reading Comprehension</Description>
     </Claim>
@@ -113,7 +113,7 @@
       <Icon>fa-spell-check</Icon>
       <Description>Vocabulary</Description>
     </Claim>
-    <Claim code="LAT_L" name="Listening and Speaking" displayOrder=" 5" scorable="true" organizational="false">
+    <Claim code="LAT_L" name="Listening and Speaking" displayOrder="5" scorable="true" organizational="false">
       <Icon>fa-headphones</Icon>
       <Description>Listening and Speaking</Description>
     </Claim>

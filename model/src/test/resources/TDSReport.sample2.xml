@@ -54,7 +54,7 @@
         <ExamineeRelationship context = "FINAL" name = "StateAbbreviation" value = "WI" contextDate = "2015-01-09T22:15:18.797" />
     </Examinee>
     <Opportunity server="ip-10-113-148-45" database="session" clientName="SBAC_PT" key="35cf5394-e48e-4265-8af6-429bee491d57" oppId="100002"
-                 startDate="2015-01-09T22:13:45.382" status="completed" validity="" opportunity="5" statusDate="2015-01-09T22:15:18.779" dateCompleted="2015-01-09T22:15:18.779" pauseCount="0" itemCount="27"
+                 startDate="2015-01-09T22:13:45.382" status="completed" validity="valid" opportunity="5" statusDate="2015-01-09T22:15:18.779" dateCompleted="2015-01-09T22:15:18.779" pauseCount="0" itemCount="27"
                  completeness="Complete" ftCount="27" abnormalStarts="0" gracePeriodRestarts="0" taId="53f748d1e4b011488d67c062" taName="Test Admin4"
                  sessionId="Adm-222" windowId="ANNUAL" windowOpportunity="5" dateForceCompleted="" completeStatus="Complete" administrationCondition="Valid"
                  assessmentParticipantSessionPlatformUserAgent="" effectiveDate="2014-11-21" >

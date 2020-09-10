@@ -57,8 +57,6 @@
     <Score measureOf="Research" measureLabel="PerformanceLevel" value="2" standardError="15.123" />
     <Score measureOf="Print on Demand" measureLabel="Accommodation" value="6" standardError="15.123" />
     <Score measureOf="Calculator" measureLabel="Accommodation" value="6" standardError="15.123" />
-    <Score measureOf="SOCK_ARGU_CON" measureLabel="RawScore" value="2" standardError=""/>
-    <Score measureOf="SOCK_ARGU_ORG" measureLabel="RawScore" value="0" standardError="" conditionCode="L"/>
     <Item position="2" segmentId="(SBAC)SBAC-FT-SomeDescriptionS1-MATH-7-Fall-2013-2014" bankKey="200" key="15566" operational="0" isSelected="1" format="MC" score="0" scoreStatus="SCORED" adminDate="2014-04-14T10:49:10.327" numberVisits="1" responseDuration="120" mimeType="text/plain" strand="3" contentLevel="3|EE|NA|E" pageNumber="1" pageVisits="1" pageTime="69834" dropped="0">
       <Response date="2014-04-14T10:56:01.077" type="">D</Response>
     </Item>

@@ -72,7 +72,7 @@
     <Opportunity database="session" key="0fa3310d-d9b3-42f1-a5a5-c6b88ca0993c" taId="uat_lab20@mailinator.com" taName="UAT Lab20" sessionId="Lab-31" windowId="ANNUAL" server="ip-172-19-0-179" qaLevel="" clientName="SBAC"
                  reportingVersion="0" abnormalStarts="0" ftCount="0" dateCompleted="2016-10-12T23:59:17.693"
                  assessmentParticipantSessionPlatformUserAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36" itemCount="16" pauseCount="0"
-                 completeStatus="Complete" status="completed" completeness="Complete" statusDate="2016-10-12T23:59:17.693" administrationCondition="" startDate="2016-10-12T23:56:54.173" oppId="100150" windowOpportunity="1" opportunity="1"
+                 completeStatus="Complete" status="completed" completeness="Complete" statusDate="2016-10-12T23:59:17.693" administrationCondition="SD" startDate="2016-10-12T23:56:54.173" oppId="100150" windowOpportunity="1" opportunity="1"
                  gracePeriodRestarts="0" effectiveDate="2016-08-29">
         <Segment id="(SBAC)SBAC-IAB-FIXED-G6M-EE-NoCalc-MATH-6-Winter-2016-2017" position="1" formId="IAB-G6M-EE-NoCalc-2017 ENG" formKey="200-18691" algorithm="fixedform" algorithmVersion="0"/>
         <Segment id="(SBAC)SBAC-IAB-FIXED-G6M-EE-Calc-MATH-6-Winter-2016-2017" position="2" formId="IAB-G6M-EE-Calc-2017 ENG" formKey="200-18688" algorithm="fixedform" algorithmVersion="0"/>

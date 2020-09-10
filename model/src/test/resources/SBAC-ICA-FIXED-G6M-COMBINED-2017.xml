@@ -72,7 +72,7 @@
     <Opportunity database="session" key="5c697ed7-b3f8-49e1-be21-7e7d80eefa81" taId="uat_lab20@mailinator.com" taName="UAT Lab20" sessionId="Lab-31" windowId="ANNUAL" server="ip-172-19-0-179" qaLevel="" clientName="SBAC"
                  reportingVersion="0" abnormalStarts="0" ftCount="0" dateCompleted="2016-10-13T00:05:20.194"
                  assessmentParticipantSessionPlatformUserAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36" effectiveDate="2016-10-12" itemCount="36" pauseCount="0"
-                 completeStatus="Complete" status="completed" completeness="Complete" statusDate="2016-10-13T00:05:20.194" administrationCondition="" startDate="2016-10-12T23:59:58.037" oppId="5000017" opportunity="1" gracePeriodRestarts="0">
+                 completeStatus="Complete" status="completed" completeness="Complete" statusDate="2016-10-13T00:05:20.194" administrationCondition="SD" startDate="2016-10-12T23:59:58.037" oppId="5000017" opportunity="1" gracePeriodRestarts="0">
         <Segment id="(SBAC)SBAC-ICA-FIXED-G6M-NoCalc-COMBINED-MATH-6-Winter-2016-2017" position="1" formId="Math ICA G6 No Calc 2017 ENG COMBINED" formKey="200-18794" algorithm="fixedform" algorithmVersion="0"/>
         <Segment id="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017" position="2" formId="Math ICA G6 Calc 2017 ENG COMBINED" formKey="200-18799" algorithm="fixedform" algorithmVersion="0"/>
         <Segment id="(SBAC)SBAC-ICA-FIXED-G6M-Perf-CellPhonePlan-COMBINED-MATH-6-Winter-2016-2017" position="3" formId="Math ICA Perf G6 CellPhonePlan 2017 ENG COMBINED" formKey="200-18854" algorithm="fixedform" algorithmVersion="0"/>

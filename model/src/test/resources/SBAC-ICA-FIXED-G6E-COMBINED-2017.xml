@@ -72,7 +72,7 @@
     <Opportunity database="session" key="cd3f30b2-b631-4801-9472-3beaad0f1fb9" taId="uat_lab20@mailinator.com" taName="UAT Lab20" sessionId="Lab-32" windowId="ANNUAL" server="ip-172-19-0-179" qaLevel="" clientName="SBAC"
                  reportingVersion="0" abnormalStarts="0" ftCount="0" dateCompleted="2016-10-13T02:32:24.972"
                  assessmentParticipantSessionPlatformUserAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36" effectiveDate="2016-10-13" itemCount="48" pauseCount="0"
-                 completeStatus="Complete" status="completed" completeness="Complete" statusDate="2016-10-13T02:32:24.972" administrationCondition="" startDate="2016-10-13T02:25:49.066" oppId="5000018" opportunity="1" gracePeriodRestarts="0">
+                 completeStatus="Complete" status="completed" completeness="Complete" statusDate="2016-10-13T02:32:24.972" administrationCondition="SD" startDate="2016-10-13T02:25:49.066" oppId="5000018" opportunity="1" gracePeriodRestarts="0">
         <Segment id="(SBAC)SBAC-ICA-FIXED-G6E-COMBINED-ELA-6-Winter-2016-2017" position="1" formId="ELA ICA G6 2017 ENG COMBINED" formKey="200-18836" algorithm="fixedform" algorithmVersion="0"/>
         <Segment id="(SBAC)SBAC-ICA-FIXED-G6E-Perf-ImportofNutriA-COMBINED-ELA-6-Winter-2016-2017" position="2" formId="ELA ICA Perf G6a 2017 ENG COMBINED" formKey="200-18878" algorithm="fixedform" algorithmVersion="0"/>
         <Segment id="(SBAC)SBAC-ICA-FIXED-G6E-Perf-ImportofNutriB-COMBINED-ELA-6-Winter-2016-2017" position="3" formId="ELA ICA Perf G6b 2017 ENG COMBINED" formKey="200-18880" algorithm="fixedform" algorithmVersion="0"/>

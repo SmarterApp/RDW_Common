@@ -72,7 +72,7 @@
     <Opportunity database="session" key="5ba80509-8638-4d39-8cd4-a2bad9b936a5" taId="uat_lab20@mailinator.com" taName="UAT Lab20" sessionId="Lab-32" windowId="ANNUAL" server="ip-172-19-0-179" qaLevel="" clientName="SBAC"
                  reportingVersion="0" abnormalStarts="0" ftCount="0" dateCompleted="2016-10-13T02:24:58.828"
                  assessmentParticipantSessionPlatformUserAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36" itemCount="15" pauseCount="0"
-                 completeStatus="Complete" status="scored" completeness="Complete" statusDate="2016-10-13T02:24:58.828" administrationCondition="" startDate="2016-10-13T02:23:56.791" oppId="100153" windowOpportunity="1" opportunity="1"
+                 completeStatus="Complete" status="scored" completeness="Complete" statusDate="2016-10-13T02:24:58.828" administrationCondition="SD" startDate="2016-10-13T02:23:56.791" oppId="100153" windowOpportunity="1" opportunity="1"
                  gracePeriodRestarts="0" effectiveDate="2016-08-29">
         <Segment id="(SBAC)SBAC-IAB-FIXED-G6E-ReadLit-ELA-6-Winter-2016-2017" position="1" formId="IAB-G6E-ReadLit-2017 ENG" formKey="200-18566" algorithm="fixedform" algorithmVersion="0"/>
         <Accommodation code="ENU" type="Language" value="English" segment="0"/>

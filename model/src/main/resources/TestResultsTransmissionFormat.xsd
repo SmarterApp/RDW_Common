@@ -209,19 +209,17 @@ governing permissions and limitations under the License.
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="validity" default="">
+            <xs:attribute name="validity" default="valid">
               <xs:simpleType>
                 <xs:restriction base="xs:token">
                   <xs:enumeration value="valid"/>
                   <xs:enumeration value="invalid"/>
-                  <xs:enumeration value=""/>
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
             <xs:attribute name="completeness">
               <xs:simpleType>
                 <xs:restriction base="xs:token">
-                  <xs:enumeration value=""/>
                   <xs:enumeration value="Partial"/>
                   <xs:enumeration value="Complete"/>
                 </xs:restriction>
@@ -243,7 +241,6 @@ governing permissions and limitations under the License.
             <xs:attribute name="completeStatus">
               <xs:simpleType>
                 <xs:restriction base="xs:token">
-                  <xs:enumeration value=""/>
                   <xs:enumeration value="Partial"/>
                   <xs:enumeration value="Complete"/>
                 </xs:restriction>
@@ -256,7 +253,6 @@ governing permissions and limitations under the License.
                   <xs:enumeration value="SD"/>
                   <xs:enumeration value="NS"/>
                   <xs:enumeration value="IN"/>
-                  <xs:enumeration value=""/>
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
@@ -329,15 +325,7 @@ governing permissions and limitations under the License.
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
-    <xs:attribute name="conditionCode">
-      <xs:simpleType>
-        <!-- CC is 1 cap char -->
-        <xs:restriction base="xs:string">
-          <xs:maxLength value="1"/>
-          <xs:pattern value="[A-Z]"/>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
+    <xs:attribute name="conditionCode"/>
     <xs:attribute name="sequence" type="UIntOneBased"/>
   </xs:complexType>
   <!-- some reusable types -->

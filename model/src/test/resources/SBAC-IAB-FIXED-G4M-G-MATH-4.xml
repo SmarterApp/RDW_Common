@@ -74,7 +74,7 @@
                  reportingVersion="0" abnormalStarts="0" ftCount="0" dateCompleted="2016-10-12T22:00:49.658"
                  assessmentParticipantSessionPlatformUserAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36"
                  itemCount="11" pauseCount="0" completeStatus="Complete" status="completed" completeness="Complete"
-                 statusDate="2016-10-12T22:00:49.658" administrationCondition="" startDate="2016-10-12T21:52:34.065" oppId="100149"
+                 statusDate="2016-10-12T22:00:49.658" administrationCondition="SD" startDate="2016-10-12T21:52:34.065" oppId="100149"
                  windowOpportunity="1" opportunity="1" gracePeriodRestarts="0" effectiveDate="2016-08-29">
         <Segment id="(SBAC)SBAC-IAB-FIXED-G4M-G-MATH-4-Winter-2016-2017" position="1" formId="IAB-G4M-G-2017 ENG" formKey="200-18740" algorithm="fixedform" algorithmVersion="0"/>
         <Accommodation code="ENU" type="Language" value="English" segment="0"/>

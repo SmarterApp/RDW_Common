@@ -1,4 +1,4 @@
 dependencies {
-    compile 'com.google.code.gson:gson'
-    compile 'org.springframework:spring-messaging'
+    implementation 'com.google.code.gson:gson'
+    implementation 'org.springframework:spring-messaging'
 }

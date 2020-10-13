@@ -111,6 +111,7 @@ governing permissions and limitations under the License.
                   <xs:attribute name="measureLabel" use="required"/>
                   <xs:attribute name="value" use="required"/>
                   <xs:attribute name="standardError" type="NullableFloat" use="required"/>
+                  <xs:attribute name="conditionCode"/>
                 </xs:complexType>
               </xs:element>
               <xs:element name="GenericVariable" minOccurs="0" maxOccurs="unbounded">
@@ -312,8 +313,9 @@ governing permissions and limitations under the License.
     <!-- same constaints as item/@score -->
     <xs:attribute name="scorePoint" type="UFloatAllowNegativeOne" use="required"/>
     <xs:attribute name="maxScore" type="UFloatAllowNegativeOne" use="required"/>
-    <!-- top level will always be "overall" (if not null); this represents the item score.  Nested ScoreInfo nodes will have dimention level scores
-        if applicable, so this will be the dimension name.  An additional level of nesting may be used for hand-scoring reads. -->
+    <!-- Top level will always be "Overall" (or null); this represents the item score.
+         Nested ScoreInfo nodes will have dimension level scores if applicable, so this will be the dimension name.
+         An additional level of nesting may be used for hand-scoring reads. -->
     <xs:attribute name="scoreDimension" use="required"/>
     <xs:attribute name="scoreStatus" use="required">
       <xs:simpleType>

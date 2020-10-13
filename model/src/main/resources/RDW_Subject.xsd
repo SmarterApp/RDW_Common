@@ -14,6 +14,7 @@
         <xs:element ref="ItemDifficulties" minOccurs="0"/>
         <xs:element ref="ReportGrades" minOccurs="0"/>
         <xs:element ref="AltScores" minOccurs="0"/>
+        <xs:element ref="Traits" minOccurs="0"/>
         <xs:element ref="Claims" minOccurs="0"/>
         <xs:element ref="Standards" minOccurs="0"/>
       </xs:sequence>
@@ -97,6 +98,12 @@
         assessment type should be enabled.
       -->
       <xs:attribute name="printedReport" default="true" type="xs:boolean"/>
+      <!--
+        This is an optional flag that controls whether exam-level trait data will be
+        displayed for this subject assessment type. Setting this true should correspond
+        to defining trait codes, and providing exam-level trait scores.
+      -->
+      <xs:attribute name="traitReport" default="false" type="xs:boolean"/>
     </xs:complexType>
   </xs:element>
 
@@ -331,6 +338,29 @@
   </xs:element>
 
   <!--
+    Trait elements define the (optional) trait codes for the subject.
+    These are used to identify and store trait scores at the exam level.
+  -->
+  <xs:element name="Traits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Trait" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Trait">
+    <xs:complexType>
+      <!-- the code is used in the measureOf in the TRT -->
+      <xs:attribute name="code" use="required"/>
+      <!-- the purpose/category are used to group results in reports -->
+      <xs:attribute name="purpose" use="required" type="String10"/>
+      <xs:attribute name="category" use="required" type="String10"/>
+      <!-- max score is used to validate data, and to constrain the report table -->
+      <xs:attribute name="maxScore" use="required" type="xs:int"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!--
     Claim elements define the scorable and organizational claims and targets referenced
     by assessment items and TRT exam results.
     It is recommended that claims be both scorable and organizational to allow for consistent organization of items.
@@ -495,16 +525,36 @@
   <!-- The colors available within the RDW system -->
   <xs:simpleType name="Color">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="blue"/>
       <xs:enumeration value="blue-dark"/>
+      <xs:enumeration value="denim"/>
+      <xs:enumeration value="blue"/>
       <xs:enumeration value="teal"/>
       <xs:enumeration value="aqua"/>
-      <xs:enumeration value="green"/>
+      <xs:enumeration value="cerulean"/>
+      <xs:enumeration value="blue-bright"/>
+      <xs:enumeration value="sky"/>
+      <xs:enumeration value="pine"/>
       <xs:enumeration value="green-dark"/>
-      <xs:enumeration value="orange"/>
-      <xs:enumeration value="red"/>
-      <xs:enumeration value="red-dark"/>
+      <xs:enumeration value="emerald"/>
+      <xs:enumeration value="green"/>
+      <xs:enumeration value="cyan"/>
+      <xs:enumeration value="moss"/>
+      <xs:enumeration value="fern"/>
+      <xs:enumeration value="green-bright"/>
+      <xs:enumeration value="yellow-gold"/>
+      <xs:enumeration value="yellow"/>
+      <xs:enumeration value="yellow-mustard"/>
       <xs:enumeration value="maroon"/>
+      <xs:enumeration value="purple-dark"/>
+      <xs:enumeration value="red-dark"/>
+      <xs:enumeration value="purple"/>
+      <xs:enumeration value="orange"/>
+      <xs:enumeration value="cobalt"/>
+      <xs:enumeration value="red"/>
+      <xs:enumeration value="pink-dark"/>
+      <xs:enumeration value="pink"/>
+      <xs:enumeration value="red-apple"/>
+      <xs:enumeration value="red-bright"/>
       <xs:enumeration value="black"/>
       <xs:enumeration value="gray-darkest"/>
       <xs:enumeration value="gray-darker"/>

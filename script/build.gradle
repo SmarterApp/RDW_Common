@@ -1,33 +1,63 @@
-ext['groovy.version'] = '2.5.6'
+dependencies {
+    // The DSLScriptBase.groovy includes a number of libraries, which need to
+    // be resolved at runtime. Since things are not set up properly to handle
+    // that (see note below), any client code that includes this library must
+    // also include these libraries listed here separately for convenience.
+    implementation 'commons-io:commons-io'
+    implementation 'jaxen:jaxen:1.1.4'
+    implementation 'org.apache.commons:commons-csv'
+    implementation 'org.codehaus.groovy:groovy'
+    implementation 'org.jdom:jdom2:2.0.6'
+    implementation project(':rdw-common-model')
+    implementation project(':rdw-common-utils')
 
-// This pulls in the dependency management which is great.
-// But it also defines silly boot tasks which we don't want here.
-apply plugin: 'org.springframework.boot'
-bootRepackage.enabled = false
+    // internal dependencies
+    implementation 'com.google.guava:guava'
+    implementation 'net.sf.saxon:Saxon-HE:9.7.0-21'
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'org.springframework:spring-context'
 
-repositories {
-    mavenCentral()
+    // fixes java 8 time marshaling
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+
+    // for @NotNull
+    implementation 'javax.validation:validation-api'
+
+    implementation project(':rdw-common-archive')
+
+    testImplementation 'org.xmlunit:xmlunit-core:2.6.2'
+    testImplementation 'org.xmlunit:xmlunit-matchers:2.6.2'
+}
+
+/* Note about dependencies ...
+
+0. Current approach. All apps using the script library must repeat the dependencies. This results
+in a maintenance problem if dependencies are changed.
+
+1. The dependencies could be added to the jar. This has the advantage of guaranteeing they are
+available. They have the disadvantage of making a fat jar.
+Probably do something like this (this is just me spit-balling, probably not exactly correct):
+
+configurations {
+    scriptLibs
 }
 
 dependencies {
-    compile 'commons-io:commons-io'
-    compile 'jaxen:jaxen:1.1.4'
-    compile 'net.sf.saxon:Saxon-HE:9.7.0-21'
-    compile 'org.codehaus.groovy:groovy:2.5.6'
-    compile 'org.jdom:jdom2:2.0.6'
-    compile 'org.apache.commons:commons-lang3'
-
-    // fixes java 8 time marshaling
-    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
-
-    // for @NotNull
-    compile 'javax.validation:validation-api'
-
-    compile project(':rdw-common-archive')
-    compile project(':rdw-common-utils')
-    compile project(':rdw-common-model')
-
-    testCompile 'org.xmlunit:xmlunit-core:2.6.2'
-    testCompile 'org.xmlunit:xmlunit-matchers:2.6.2'
+    scriptLibs 'org.codehaus.groovy:groovy:2.5.6'
+    scriptLibs 'org.jdom:jdom2:2.0.6'
+    ...
+    configurations.implementation.extendsFrom(configurations.scriptLibs)
 }
+
+jar {
+    from { configurations.scriptLibs.collect { it ... } }
+}
+
+2. Use 'java-library' and the "api" configuration for these libraries. In theory this is the best
+solution, but i couldn't get it to work: gradle isn't emitting the proper pom and, even when i
+hand-jammed it, gradle didn't pull in the dependencies as expected.
+
+3. Generate a "bom" for the library. This would avoid the maintenance problem. I haven't
+investigated this at all.
+ */
 

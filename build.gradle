@@ -1,103 +1,129 @@
-buildscript {
-  repositories {
-    mavenLocal()
-    jcenter()
-  }
-  dependencies {
-    classpath("io.spring.gradle:dependency-management-plugin:1.0.6.RELEASE")
-    classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.18.RELEASE")
-  }
+plugins {
+    id 'idea'
+    id 'com.jfrog.artifactory' version '4.11.0'
 }
 
-apply plugin: 'io.spring.dependency-management'
+idea {
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
 
 allprojects {
     group = 'org.opentestsystem.rdw.common'
-    version = '2.3.0-SNAPSHOT'
 
-    apply plugin: 'idea'
-
-    if (project.hasProperty("buildNumber")) {
-      project.setVersion(project.version.toString().replaceAll("SNAPSHOT", "${buildNumber}"))
+    if (project.hasProperty('buildNumber')) {
+        project.setVersion(project.version.toString().replaceAll("SNAPSHOT", "${buildNumber}"))
     }
 }
 
 subprojects {
-  apply plugin: "java"
-  apply plugin: "maven"
-  apply plugin: "jacoco"
-  apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+    apply plugin: 'jacoco'
+    apply plugin: 'com.jfrog.artifactory'
 
-  sourceCompatibility = 1.8
-  targetCompatibility = 1.8
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
 
-  repositories {
-      mavenCentral()
-  }
+    repositories {
+        mavenCentral()
+    }
 
-  dependencyManagement {
     dependencies {
-      // commonly used libraries
-      dependency 'com.google.code.gson:gson:2.8.5'
-      dependency 'com.google.guava:guava:27.0.1-jre'
-      dependency 'commons-io:commons-io:2.6'
-      dependency 'org.apache.commons:commons-csv:1.6'
-      dependency 'org.apache.commons:commons-lang3:3.8.1'
-      dependency 'org.apache.commons:commons-text:1.6'
-      dependency 'org.slf4j:slf4j-api:1.7.25'
+        // For any library brought in by spring-boot-dependencies, if we want a
+        // different version, this is how to set it. You can see the options in
+        // https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-dependencies/1.5.21.RELEASE/spring-boot-dependencies-1.5.21.RELEASE.pom
+        rootProject.ext['assertj.version'] = '3.14.0'
+        rootProject.ext['groovy.version'] = '2.5.6'
+        rootProject.ext['jackson.version'] = '2.9.9'
+        rootProject.ext['mockito.version'] = '2.28.2'
+        rootProject.ext['mysql.version'] = '5.1.46' // 5.1.47 causes problems (mostly in RDW_Reporting)
 
-      // commonly used test libraries
-      dependency 'junit:junit:4.12'
-      dependency 'org.assertj:assertj-core:3.11.1'
-      dependency 'org.mockito:mockito-core:2.23.4'
-      dependency 'org.mockito:mockito-inline:2.23.4'
+        constraints {
+            // commonly used libraries
+            implementation 'com.google.code.gson:gson:2.8.5'
+            implementation 'com.google.guava:guava:27.0.1-jre'
+            implementation 'commons-io:commons-io:2.6'
+            implementation 'org.apache.commons:commons-csv:1.6'
+            implementation 'org.apache.commons:commons-lang3:3.8.1'
+            implementation 'org.apache.commons:commons-text:1.6'
+            implementation "org.codehaus.groovy:groovy:${rootProject.ext['groovy.version']}"
+            implementation 'org.slf4j:slf4j-api:1.7.26'
 
-      // jackson
-      dependency 'com.fasterxml.jackson.core:jackson-annotations:2.9.9'
-      dependency 'com.fasterxml.jackson.core:jackson-core:2.9.9'
-      dependency 'com.fasterxml.jackson.core:jackson-databind:2.9.9.1'
-      dependency 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.9'
-      dependency 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.9'
-      dependency 'com.fasterxml.jackson.datatype:jackson-datatype-guava:2.9.9'
+            // jackson
+            implementation "com.fasterxml.jackson.core:jackson-annotations:${rootProject.ext['jackson.version']}"
+            implementation "com.fasterxml.jackson.core:jackson-core:${rootProject.ext['jackson.version']}"
+            implementation "com.fasterxml.jackson.core:jackson-databind:${rootProject.ext['jackson.version']}.1"
+            implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${rootProject.ext['jackson.version']}"
+            implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${rootProject.ext['jackson.version']}"
+            implementation "com.fasterxml.jackson.datatype:jackson-datatype-guava:${rootProject.ext['jackson.version']}"
 
-      // Woodstox STAX2 XML stream processing API and required
-      // Sun Multi-Schema Validation libraries
-      dependency 'org.codehaus.woodstox:stax2-api:4.1'
-      dependency 'msv:msv:20050913'
-      dependency 'msv:xsdlib:20050913'
-      dependency 'xerces:xercesImpl:2.11.0'
+            // Woodstox STAX2 XML stream processing API and required
+            // Sun Multi-Schema Validation libraries
+            implementation 'org.codehaus.woodstox:stax2-api:4.1'
+            implementation 'msv:msv:20050913'
+            implementation 'msv:xsdlib:20050913'
+            implementation 'xerces:xercesImpl:2.11.0'
+
+            // commonly used test libraries
+            testImplementation 'junit:junit:4.12'
+            testImplementation "org.assertj:assertj-core:${rootProject.ext['assertj.version']}"
+            testImplementation "org.mockito:mockito-core:${rootProject.ext['mockito.version']}"
+            testImplementation "org.mockito:mockito-inline:${rootProject.ext['mockito.version']}"
+        }
+
+        implementation platform('org.springframework.boot:spring-boot-dependencies:1.5.21.RELEASE')
+        implementation platform('org.springframework.cloud:spring-cloud-dependencies:Dalston.RELEASE')
+
+        // handy for creating metadata with @ConfigurationProperties
+        compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
+
+        implementation 'org.slf4j:slf4j-api'
+
+        testImplementation 'junit:junit'
+        testImplementation 'org.mockito:mockito-core'
+        testImplementation 'org.assertj:assertj-core'
     }
-    imports {
-      // make springframework versions consistent with other projects in the RDW suite
-      mavenBom 'org.springframework.boot:spring-boot-dependencies:1.5.18.RELEASE'
-      mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Edgware.SR5'
+
+    test {
+        finalizedBy jacocoTestReport
     }
-  }
 
-  dependencies {
-    compile 'org.slf4j:slf4j-api'
+    java {
+        withJavadocJar()
+        withSourcesJar()
+    }
 
-    testCompile 'junit:junit'
-    testCompile 'org.mockito:mockito-core'
-    testCompile 'org.assertj:assertj-core'
-  }
+    // 'install' task alias for installing (publishing) to local .m2
+    task install(dependsOn: [build, publishToMavenLocal])
 
-  test.finalizedBy jacocoTestReport
+    // make sure publishing does a build first
+    tasks.artifactoryPublish.dependsOn 'build'
 
-  task sourcesJar(type: Jar, dependsOn: classes) {
-    classifier = 'sources'
-    from sourceSets.main.allSource
-  }
-
-  task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-  }
-
-  artifacts {
-    archives sourcesJar
-    archives javadocJar
-  }
+    publishing.publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }
-  
 
+// skip publishing task for the root module
+artifactoryPublish.skip = true
+
+artifactory {
+    contextUrl = 'https://artifactory.smarterbalanced.org/artifactory/'
+
+    publish {
+        repository {
+            repoKey = project.version.contains('-SNAPSHOT') ? 'libs-snapshots-local' : 'libs-releases-local'
+            username = project.artifactoryUser
+            password = project.artifactoryPassword
+            maven = true
+        }
+        defaults {
+            publications('mavenJava')
+        }
+    }
+}

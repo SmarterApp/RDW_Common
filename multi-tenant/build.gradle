@@ -1,20 +1,17 @@
-configurations {
-    testCompile.extendsFrom compileOnly
-}
-
 dependencies {
-    compile 'org.springframework:spring-context'
-    compile 'com.google.guava:guava'
-    compile 'org.springframework.security.oauth:spring-security-oauth2'
-    compileOnly 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'com.google.guava:guava'
+    implementation 'org.springframework:spring-context'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.cloud:spring-cloud-context'
+    implementation 'org.springframework.security.oauth:spring-security-oauth2'
     compileOnly 'org.springframework.cloud:spring-cloud-starter-stream-rabbit'
     compileOnly 'org.springframework:spring-messaging'
     compileOnly 'org.springframework.cloud:spring-cloud-starter-config'
 
-    testCompile 'org.mockito:mockito-inline'  // to mock final classes
-    testCompile 'org.springframework:spring-test'
+    testImplementation 'org.mockito:mockito-inline'  // to mock final classes
+    testImplementation 'org.springframework:spring-test'
     testCompile('org.springframework.boot:spring-boot-starter-test') {
         exclude(module: 'commons-logging')
     }
-    testCompile 'org.springframework.cloud:spring-cloud-stream-test-support'
+    testImplementation 'org.springframework.cloud:spring-cloud-stream-test-support'
 }

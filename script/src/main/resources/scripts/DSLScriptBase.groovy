@@ -71,6 +71,10 @@ abstract class DSLScriptBase extends PipelineScript {
         return parserHelper
     }
 
+    DataElementErrorCollector getDataElementErrorCollector(){
+        return errorCollector;
+    }
+
     /**
      * This method is the same as {@link #getCheckValid(ImportStatus)}, but allows the status to be passed
      * in as a string. This should match (case-insensitive) one of names in the ImportStatus enum.

@@ -264,10 +264,15 @@
         <!-- The performance-agnostic overall achievement message -->
         <!-- (optional because it isn't actually used in the report) -->
         <xs:element name="OverallAchievementMessage" type="xs:string" minOccurs="0"/>
+        <!-- The performance-agnostic alt-score achievement message -->
+        <xs:element name="AltScoreAchievementMessage" type="xs:string" minOccurs="0"/>
         <!-- The performance-agnostic sub-score achievement message -->
         <xs:element name="ClaimAchievementMessage" type="xs:string" minOccurs="0"/>
         <!-- The performance level messages for the student's overall performance -->
         <xs:element ref="ReportPerformanceLevels"/>
+        <!-- The alt score messages -->
+        <!-- (optional because a subject may not have any alt scores) -->
+        <xs:element ref="ReportAltScores" minOccurs="0"/>
         <!-- The claim score messages -->
         <!-- (optional because a subject may not have claims) -->
         <xs:element ref="ReportClaims" minOccurs="0"/>
@@ -299,6 +304,30 @@
           <xs:attribute name="level" use="required" type="LevelOfPerformance"/>
         </xs:extension>
       </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <!--
+    ReportAltScore elements define the report messages for a particular
+    grade, assessment type, alt score and performance level.
+  -->
+  <xs:element name="ReportAltScores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ReportAltScore"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReportAltScore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ReportPerformanceLevels"/>
+      </xs:sequence>
+      <!--
+        The target category.  This must reference an existing scorable Alt@code
+        value in the XML document.
+      -->
+      <xs:attribute name="code" use="required" type="String10"/>
     </xs:complexType>
   </xs:element>
 
